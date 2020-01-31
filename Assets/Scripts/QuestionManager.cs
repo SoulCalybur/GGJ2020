@@ -12,6 +12,12 @@ public class QuestionManager : MonoBehaviour {
     void Start()
     {
 
+        ShuffleAdvice();
+        for (int i = 0; i < 5; i++)
+        {
+
+            //getNextQuestion(i);
+        }
     }
 
     public void GiveAdvice(int i) {
@@ -40,14 +46,14 @@ public class QuestionManager : MonoBehaviour {
     }
 
     public void AskQuestion(int i) {
-        Debug.Log(questionbuttons[i].GetComponentInChildren<Text>().text);
-        questionbuttons[i].GetComponentInChildren<Text>().text = getNextQuestion(i);
-
+        //Debug.Log(questionbuttons[i].GetComponentInChildren<Text>().text);
+        getNextQuestion(i);
     }
 
-    public string getNextQuestion(int i) {
+    public void getNextQuestion(int i) {
 
-        return questions[i,0];
+
+        questionbuttons[i].GetComponentInChildren<Text>().text = questions[i, 0];
 
     }
     
