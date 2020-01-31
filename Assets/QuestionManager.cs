@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class QuestionManager : MonoBehaviour {
     public string[,] questions = new string[,] { { "test a", "test a2" }, { "test b", "test b2"}, { "test c","test c2" }, { "test d", "test d2" }, { "test e", "test e2" } };
@@ -21,9 +22,19 @@ public class QuestionManager : MonoBehaviour {
 
     public void ShuffleAdvice()
     {
+
+        List<string> tmpStringList = new List<string>();
+
         for (int i = 0; i < 5; i++)
         {
-            advicebuttons[i].GetComponentInChildren<Text>().text = advice[i, 0];
+            tmpStringList.Add(advice[i,0]);
+        }
+
+        for (int i = 0; i < 5; i++)
+        {
+            int randomIndex = Random.Range(0, tmpStringList.Count);
+            advicebuttons[i].GetComponentInChildren<Text>().text = tmpStringList[randomIndex];
+            tmpStringList.RemoveAt(randomIndex);
 
         }
     }
