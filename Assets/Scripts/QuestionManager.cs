@@ -81,8 +81,9 @@ public class QuestionManager : MonoBehaviour {
         
     }
 
-    public void GiveAdvice(int i) {
+    public void GiveAdvice(int buttonIndex) {
 
+        characterM.QuestionAsked(buttonIndex);
         ShuffleAdvice();
 
     }
