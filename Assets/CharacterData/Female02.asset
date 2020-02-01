@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 200370f8b670edf479a560a3aa82699a, type: 3}
-  m_Name: Female01
+  m_Name: Female02
   m_EditorClassIdentifier: 
   stressLevel: 0
   expressionSprites:
-  - {fileID: 21300000, guid: 9b93ca21f2b525c4e866e062b40376c7, type: 3}
-  - {fileID: 21300000, guid: f5505dbbf0f88c443b8416239642dbc7, type: 3}
-  - {fileID: 21300000, guid: 100b7dd68dccc4c4ba007a3e19698351, type: 3}
-  - {fileID: 21300000, guid: 3c9af9bff2345eb47a5367abe8e995a2, type: 3}
+  - {fileID: 21300000, guid: 0516df55f70bf3a48bc862216074c83e, type: 3}
+  - {fileID: 21300000, guid: 1fb56ddda32aa2a4882b0bbb98748120, type: 3}
   answers_category_O:
   - answer O
   answers_category_C:
