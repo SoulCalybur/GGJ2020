@@ -15,10 +15,10 @@ public class QuestionManager : MonoBehaviour {
     public string[,] advice = new string[,] { 
         
         {"Haben Sie keine Angst davor, mit der Zeit zu gehen", "Versuchen sie mit Enthusiasmus auf neue Herausforderungen zuzugehen", "Teilen Sie doch Ihre Gefühle mit anderen.","Integrieren Sie Ihr Umfeld in Ihre Unternehmungen!"},  //O
-        { "Sie können einen Fünfjahresplan aufstellen und ihr Problem in Einzelschritte zerlegen" ,"Schreiben Sie Tagebuch, um Ihren Tag besser planen zu können" },     //C
-        { "Erweitern Sie ihr soziales Umfeld mit Gleichgesinnten ","Sie sollten einem Club oder Verein beitreten. " },     //E
-        { "Gehen sie mehr auf Menschen ein.","Suchen Sie sich andere Leute, mit denen Sie in Wettbewerb treten können." },     //A
-        { "Sie müssen Nähe zulassen","Tun Sie das, was Ihnen Spaß macht, und machen Sie es zu einer Gewohnheit" } };   //N
+        {"Setzen sie klare Ziele", "Ein geregelter Tagesablauf könnte für mehr Sicherheit in ihrem Leben sorgen", "Sie können einen Fünfjahresplan aufstellen und ihr Problem in Einzelschritte zerlegen" ,"Schreiben Sie Tagebuch, um Ihren Tag besser planen zu können" },     //C
+        {"Social Media kann ihnen helfen neue Kontakte zu knüpfen", "Gehen Sie mehr aus sich heraus und reden sie mit Leuten. ","Erweitern Sie ihr soziales Umfeld mit Gleichgesinnten ","Sie sollten einem Club oder Verein beitreten. " },     //E
+        {"Gewähren sie anderen denselben Respekt den sie empfangen möchten.", "Sorgen Sie zuerst dafür dass es Ihnen gut geht, bevor Sie sich um andere kümmern.", "Gehen sie mehr auf Menschen ein.","Suchen Sie sich andere Leute, mit denen Sie in Wettbewerb treten können." },     //A
+        {"Sie sollten sich eine Bezugsperson zulegen", "Arbeiten sie an ihrem Selbstbild, vielleicht müssen sie ihre Einstellung zu sich selbst ändern","Sie müssen Nähe zulassen","Tun Sie das, was Ihnen Spaß macht, und machen Sie es zu einer Gewohnheit" } };   //N
     public Button[] questionbuttons;
     public Button[] advicebuttons;
 
