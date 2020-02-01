@@ -62,15 +62,21 @@ public class CharacterManager : MonoBehaviour
             Debug.Log("Character stressLevel ZERO!");
             currentCharacter.stressLevel = 0.0f;
 
+            progessBar.SetFillAmount(currentCharacter.stressLevel);
+            UpdateCharExpressionSprite();
+
         } else if (currentCharacter.stressLevel > 1.0f) {
             Debug.Log("Character stressLevel MAXED!");
             currentCharacter.stressLevel = 1.0f;
-            loadNextCharacter();
-        }
 
-        //UPDATE EXTERNAL DEPENDENCIES
-        progessBar.SetFillAmount(currentCharacter.stressLevel);
-        UpdateCharExpressionSprite();
+            progessBar.SetFillAmount(currentCharacter.stressLevel);
+            UpdateCharExpressionSprite();
+
+            loadNextCharacter();
+        } else {
+            progessBar.SetFillAmount(currentCharacter.stressLevel);
+            UpdateCharExpressionSprite();
+        }
     }
 
 }
