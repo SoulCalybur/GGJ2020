@@ -25,7 +25,7 @@ public class GameSessionManager : MonoBehaviour
         HIDE QUESTIONS
         GET REACTION FROM CHARACTER
             DISPLAY REACTION TEXT
-            UPDATE STRESSLVL OF CHARACTER
+            UPDATE STRESSLVL / PICTURE OF CHARACTER
                 IF STRESSLVL TOO HIGH => 
                     CHARACTER LEAVES
                     LOAD NEW CHARACTER

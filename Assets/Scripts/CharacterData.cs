@@ -7,8 +7,11 @@ using UnityEngine;
 public class CharacterData : ScriptableObject {
 
     [Range(0,1)]
-    public float stressLevel;
+    public float stressLevel = 0.3f;
     public List<Sprite> expressionSprites;
+
+    public float stressLvlInscrease = 0.2f;
+    public float stressLvlDecrease = 0.1f;
 
     public List<string> answers_category_O;
     public List<string> answers_category_C;
@@ -53,6 +56,13 @@ public class CharacterData : ScriptableObject {
                 Debug.LogError("Wrong index for getting ReactionCategory");
                 return null;
         }
+    }
+
+    public float GetStressIncreaseAmount() {
+        return stressLvlInscrease;
+    }
+    public float GetStressDecreaseAmount() {
+        return stressLvlDecrease;
     }
 
 }

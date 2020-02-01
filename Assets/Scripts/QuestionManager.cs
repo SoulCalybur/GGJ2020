@@ -3,7 +3,9 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class QuestionManager : MonoBehaviour {
+    // [CATEGORY, QUESTION-TEXT]
     public string[,] questions = new string[,] { { "test a", "test a2" }, { "test b", "test b2"}, { "test c","test c2" }, { "test d", "test d2" }, { "test e", "test e2" } };
+    // [CATEGORY, ADVICE-TEXT]
     public string[,] advice = new string[,] { { "advice 1" }, { "advice 2" }, { "advice 3" }, { "advice 4" }, { "advice 5" } };
     public Button[] questionbuttons;
     public Button[] advicebuttons;
