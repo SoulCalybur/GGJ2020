@@ -28,7 +28,7 @@ public class CharacterManager : MonoBehaviour
     void loadNextCharacter() {
         if (charIndex >= characters.Count) {
             Debug.Log("Last character reached. End the Round");
-            EndRound();
+            GameSessionManager.RaiseOnEnd();
             return;
         }
         currentCharacter = characters[charIndex];

@@ -7,16 +7,18 @@ using System;
 public class Countdown : MonoBehaviour {
 
     public float timer = 180.0f;
-    public Text uiText; 
+    public Text uiText;
+
 
     void Update() {
         timer -= Time.deltaTime;
         if (timer <= 0) {
             timer = 0.0f;
             Debug.Log("Timer is up!");
-            return;
+            GameSessionManager.RaiseOnEnd();
+        } else {
+            UpdateText();
         }
-        UpdateText();
     }
 
     private void UpdateText() {
@@ -31,7 +33,7 @@ public class Countdown : MonoBehaviour {
         if (seconds < 10) secondsText = "0" + seconds;
         else secondsText = seconds.ToString();
 
-        uiText.text = minutesText + " : " + secondsText;
+        uiText.text = minutesText + ":" + secondsText;
 
     }
 

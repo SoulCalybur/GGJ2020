@@ -5,7 +5,19 @@ using UnityEngine;
 
 public class GameSessionManager : MonoBehaviour
 {
+
+    // EventManager
+    public delegate void OnRoundEnd();
+    public static event OnRoundEnd onRoundEnd;
+
     public CharacterManager characterM;
+
+    public static void RaiseOnEnd() {
+        if(onRoundEnd != null) {
+            onRoundEnd();
+        }
+    }
+
 
     // Start is called before the first frame update
     void Start()
