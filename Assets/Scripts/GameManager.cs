@@ -1,40 +1,48 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    /*
-    GAME ABLAUF
 
-    INIT GAMEPLAY
-        LOAD CHARACTERDATA
-        LOAD QUESTIONS INTO UI
-        INIT COUNTDOWN
-        
-    UPDATE LOOP
-        UPDATE COUNTDOWN
 
-    CHOOSE QUESTION
-        HIDE QUESTIONS
-        GET REACTION FROM CHARACTER
-            DISPLAY REACTION TEXT
-            UPDATE STRESSLVL OF CHARACTER
-                IF STRESSLVL TOO HIGH => 
-                    CHARACTER LEAVES
-                    LOAD NEW CHARACTER
-        DISPLAY NEXT QUESTIONS
-        
-    */
+    public static GameManager instance;
 
-    public CharacterManager characterM;
 
-    public void InitGameplay() {
-        LoadCharacterData();
+    private void Awake()
+    {
+        instance = this;
     }
 
-    private void LoadCharacterData() {
-        throw new NotImplementedException();
+    private void Start()
+    {
+        //load main menu
+        SceneManager.LoadScene(1, LoadSceneMode.Additive);
     }
+
+
+    public static void LoadLevel(int n)
+    {
+        //ping pong between level and main menu
+        if (n == 2)
+        {
+            SceneManager.LoadScene(2, LoadSceneMode.Additive);
+            SceneManager.UnloadSceneAsync(1, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
+        }
+        /*else if (n == 1)
+        {
+            SceneManager.LoadScene(1, LoadSceneMode.Additive);
+            SceneManager.UnloadSceneAsync("JeremyScene");
+        }*/
+
+        //if(!SceneManager.GetSceneAt(n).isLoaded) 
+    }
+
+
+    public static void UnLoad(int n)
+    {
+        
+    }
+
+
+
 }
