@@ -10,12 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 200370f8b670edf479a560a3aa82699a, type: 3}
-  m_Name: Female02
+  m_Name: Grandma
   m_EditorClassIdentifier: 
   stressLevel: 0
   expressionSprites:
-  - {fileID: 21300000, guid: 0516df55f70bf3a48bc862216074c83e, type: 3}
-  - {fileID: 21300000, guid: 1fb56ddda32aa2a4882b0bbb98748120, type: 3}
+  - {fileID: 21300000, guid: 075b658dcac780f4d9673d572ae23925, type: 3}
+  - {fileID: 21300000, guid: 3b676d0c9fa67d744bd7e5d83cb06211, type: 3}
+  - {fileID: 21300000, guid: d74983de7ff586249b649e7325a7d648, type: 3}
+  - {fileID: 21300000, guid: 8ee839cb65256cb408e0c5d03e15914b, type: 3}
+  - {fileID: 21300000, guid: 5d7eb6d8989ade2489cb2664d96800e4, type: 3}
+  stressLvlInscrease: 0.3
+  stressLvlDecrease: 0.05
+  stressAmount_O: -0.1
+  stressAmount_C: 0.3
+  stressAmount_E: 0.005
+  stressAmount_A: 0.005
+  stressAmount_N: 0.005
   answers_category_O:
   - answer O
   answers_category_C:

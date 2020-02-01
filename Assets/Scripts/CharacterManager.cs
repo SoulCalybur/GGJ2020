@@ -18,17 +18,28 @@ public class CharacterManager : MonoBehaviour
 
     void Start() {
         sRenderer = CharacterSceneObj.GetComponent<SpriteRenderer>();
-        currentCharacter = characters[0];
-        charIndex++;
-
-        sRenderer.sprite = currentCharacter.expressionSprites[0];
+        currentCharacter = characters[charIndex];
+        currentCharacter.stressLevel = 0;
+        UpdateCharExpressionSprite();
         progessBar.SetFillAmount(currentCharacter.stressLevel);
+        charIndex++;
     }
 
     void loadNextCharacter() {
-        charIndex++;
-        currentCharacter = characters[charIndex % characters.Count];
+        if (charIndex >= characters.Count) {
+            Debug.Log("Last character reached. End the Round");
+            EndRound();
+            return;
+        }
+        currentCharacter = characters[charIndex];
+        currentCharacter.stressLevel = 0;
         UpdateCharExpressionSprite();
+        progessBar.SetFillAmount(currentCharacter.stressLevel);
+
+        charIndex++;
+        Debug.Log("CharIndex = " + charIndex);
+        
+
     }
 
     // Update is called once per frame
@@ -52,6 +63,7 @@ public class CharacterManager : MonoBehaviour
         if(currentCharacter.stressLevel > 1.0f) {
             Debug.Log("Character stresslevel MAXED!");
             currentCharacter.stressLevel = 1.0f;
+            loadNextCharacter();
         }
 
         //UPDATE EXTERNAL DEPENDENCIES
@@ -65,6 +77,28 @@ public class CharacterManager : MonoBehaviour
         if (currentCharacter.stressLevel < 0.0f) {
             Debug.Log("Character stresslevel ZERO!");
             currentCharacter.stressLevel = 0.0f;
+        }
+
+        //UPDATE EXTERNAL DEPENDENCIES
+        progessBar.SetFillAmount(currentCharacter.stressLevel);
+        UpdateCharExpressionSprite();
+    }
+
+    private void EndRound() {
+
+    }
+
+    public void QuestionAsked(int buttonIndex) {
+        float amount = currentCharacter.GetStressAmountByCategory(buttonIndex);
+        currentCharacter.stressLevel += amount;
+        if (currentCharacter.stressLevel < 0.0f) {
+            Debug.Log("Character stressLevel ZERO!");
+            currentCharacter.stressLevel = 0.0f;
+
+        } else if (currentCharacter.stressLevel > 1.0f) {
+            Debug.Log("Character stressLevel MAXED!");
+            currentCharacter.stressLevel = 1.0f;
+            loadNextCharacter();
         }
 
         //UPDATE EXTERNAL DEPENDENCIES

@@ -6,12 +6,20 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New CharacterData", menuName = "Character")]
 public class CharacterData : ScriptableObject {
 
+    public string charName;
+    public string introText;
+
     [Range(0,1)]
-    public float stressLevel = 0.3f;
+    public float stressLevel = 0.0f;
     public List<Sprite> expressionSprites;
 
-    public float stressLvlInscrease = 0.2f;
-    public float stressLvlDecrease = 0.1f;
+    [Header("Stress Amount per Category")]
+    public float stressAmount_O = 0.1f;
+    public float stressAmount_C = 0.1f;
+    public float stressAmount_E = 0.1f;
+    public float stressAmount_A = 0.1f;
+    public float stressAmount_N = 0.1f;
+
 
     public List<string> answers_category_O;
     public List<string> answers_category_C;
@@ -31,6 +39,19 @@ public class CharacterData : ScriptableObject {
         float range = (expressionSprites.Count - 1) * stressLevel;
         int i = (int)Math.Floor(range);
         return expressionSprites[i];
+    }
+
+    public float GetStressAmountByCategory(int i) {
+        switch (i) {
+            case 0: return stressAmount_O;
+            case 1: return stressAmount_C;
+            case 2: return stressAmount_E;
+            case 3: return stressAmount_A;
+            case 4: return stressAmount_N;
+            default:
+                Debug.LogError("Wrong index for getting AnswerCategory");
+                return 0.9f;
+        }
     }
 
     public List<string> GetAnswersByCategory(int i) {
@@ -58,11 +79,5 @@ public class CharacterData : ScriptableObject {
         }
     }
 
-    public float GetStressIncreaseAmount() {
-        return stressLvlInscrease;
-    }
-    public float GetStressDecreaseAmount() {
-        return stressLvlDecrease;
-    }
 
 }

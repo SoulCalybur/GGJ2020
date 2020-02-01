@@ -21,6 +21,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5f2102139c943a64cb24f0aeb360385c, type: 3}
   stressLvlInscrease: 0.05
   stressLvlDecrease: 0.1
+  stressAmount_O: 0.1
+  stressAmount_C: 0.3
+  stressAmount_E: 0.1
+  stressAmount_A: -0.2
+  stressAmount_N: 0.1
   answers_category_O:
   - answer O
   answers_category_C:
