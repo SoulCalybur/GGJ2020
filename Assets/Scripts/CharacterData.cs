@@ -22,7 +22,7 @@ public class CharacterData : ScriptableObject {
     public List<string> reactions_category_A;
     public List<string> reactions_category_N;
 
-    public Sprite GetExprByStressLvl(float stressLevel) {
+    public Sprite GetExprByStressLvl() {
         Debug.Assert((stressLevel >= 0 && stressLevel <= 1), "StressLevel not in Range(0,1)");
         Debug.Assert((expressionSprites.Count != 0), "No Sprites set in CharacterData!");
         float range = (expressionSprites.Count - 1) * stressLevel;

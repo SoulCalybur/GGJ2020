@@ -8,16 +8,25 @@ public class CharacterManager : MonoBehaviour
     public SpriteRenderer sRenderer;
     public List<CharacterData> characters;
 
+    // CURRENTLY loaded
     CharacterData currentCharacter;
-    // Start is called before the first frame update
+    int charIndex = 0;
+
     void Start() {
         sRenderer = GetComponent<SpriteRenderer>();
-        sRenderer.sprite = characters[0].expressionSprites[0];
+        currentCharacter = characters[0];
+        charIndex++;
+        sRenderer.sprite = currentCharacter.expressionSprites[0];
+    }
+
+    void loadNextCharacter() {
+        charIndex++;
+        currentCharacter = characters[charIndex % characters.Count];
+        sRenderer.sprite = currentCharacter.GetExprByStressLvl();
     }
 
     // Update is called once per frame
     void Update() {
-        sRenderer.sprite = characters[0].GetExprByStressLvl(characters[0].stressLevel);
-
+        sRenderer.sprite = currentCharacter.GetExprByStressLvl();
     }
 }
