@@ -11,6 +11,10 @@ public class QuestionManager : MonoBehaviour {
     public int questionIndex = 0;
     // [CATEGORY, QUESTION-TEXT]
     public string[][] questions;
+    public List<string>[] tempQuestionList = new List<string>[5];
+
+
+
     // [CATEGORY, ADVICE-TEXT]
     public string[,] advice = new string[,] { 
         
@@ -22,7 +26,8 @@ public class QuestionManager : MonoBehaviour {
     public Button[] questionbuttons;
     public Button[] advicebuttons;
 
-    private int adviceSetNumber = 0;
+    private int adviceSetNumber = 0, adviceAmount = 4, question;
+
 
     void Start() {
         InitContent();
@@ -59,8 +64,16 @@ public class QuestionManager : MonoBehaviour {
         questions[4][1] = "Streiten Sie sich häufig?";
 
 
+        //erzeuge 5 listen in einem array
+        for (int i = 0; i < 5; i++)
+        {
+            tempQuestionList[i] = new List<string>();
+            print(questions[i]);
+            tempQuestionList[i].AddRange(questions[i]);
 
+        }
 
+        
 
 
         ShuffleAdvice();
@@ -68,8 +81,9 @@ public class QuestionManager : MonoBehaviour {
         
     }
 
-    public void GiveAdvice(int i) {
+    public void GiveAdvice(int buttonIndex) {
 
+        characterM.QuestionAsked(buttonIndex);
         ShuffleAdvice();
 
     }
@@ -79,7 +93,8 @@ public class QuestionManager : MonoBehaviour {
 
         List<string> tmpStringList = new List<string>();
 
-         adviceSetNumber = (++adviceSetNumber)%2;
+        //go through
+        adviceSetNumber = (++adviceSetNumber)%adviceAmount;
 
         for (int i = 0; i < 5; i++)
         {
@@ -96,10 +111,20 @@ public class QuestionManager : MonoBehaviour {
     }
 
     public void AskQuestion(int buttonIndex) {
-        FillQuestionButtons();
+       // FillQuestionButtons();
         characterM.QuestionAsked(buttonIndex);
+        getNextQuestion(buttonIndex);
     }
 
+    public void getNextQuestion(int i)
+    {
+
+
+        questionbuttons[i].GetComponentInChildren<Text>().text = tempQuestionList[i][0];
+        if (tempQuestionList[i].Count > 0) tempQuestionList[i].Remove(tempQuestionList[i][0]);
+
+    }
+    /*
     public void getNextQuestion(int buttonIndex) {
         questionbuttons[buttonIndex].GetComponentInChildren<Text>().text = questions[buttonIndex][questionIndex];
     }
@@ -109,11 +134,15 @@ public class QuestionManager : MonoBehaviour {
         
     }
 
-    private void FillQuestionButtons() {
-        for (int i = 0; i < 5; i++) {
+
+    */
+
+    private void FillQuestionButtons()
+    {
+        for (int i = 0; i < 5; i++)
+        {
             getNextQuestion(i);
         }
         questionIndex++;
     }
-
 }
