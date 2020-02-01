@@ -1,19 +1,40 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    
-    // Start is called before the first frame update
-    void Start()
-    {
+    /*
+    GAME ABLAUF
+
+    INIT GAMEPLAY
+        LOAD CHARACTERDATA
+        LOAD QUESTIONS INTO UI
+        INIT COUNTDOWN
         
+    UPDATE LOOP
+        UPDATE COUNTDOWN
+
+    CHOOSE QUESTION
+        HIDE QUESTIONS
+        GET REACTION FROM CHARACTER
+            DISPLAY REACTION TEXT
+            UPDATE STRESSLVL OF CHARACTER
+                IF STRESSLVL TOO HIGH => 
+                    CHARACTER LEAVES
+                    LOAD NEW CHARACTER
+        DISPLAY NEXT QUESTIONS
+        
+    */
+
+    public CharacterManager characterM;
+
+    public void InitGameplay() {
+        LoadCharacterData();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void LoadCharacterData() {
+        throw new NotImplementedException();
     }
 }

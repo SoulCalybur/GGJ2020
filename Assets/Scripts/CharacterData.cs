@@ -24,6 +24,7 @@ public class CharacterData : ScriptableObject {
 
     public Sprite GetExprByStressLvl(float stressLevel) {
         Debug.Assert((stressLevel >= 0 && stressLevel <= 1), "StressLevel not in Range(0,1)");
+        Debug.Assert((expressionSprites.Count != 0), "No Sprites set in CharacterData!");
         float range = (expressionSprites.Count - 1) * stressLevel;
         int i = (int)Math.Floor(range);
         return expressionSprites[i];

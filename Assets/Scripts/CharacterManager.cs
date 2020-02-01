@@ -5,26 +5,19 @@ using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
 {
-    public List<Sprite> avatars;
     public SpriteRenderer sRenderer;
-    public CharacterData data;
+    public List<CharacterData> characters;
 
-    private int index = 0;
-
+    CharacterData currentCharacter;
     // Start is called before the first frame update
     void Start() {
         sRenderer = GetComponent<SpriteRenderer>();
-        sRenderer.sprite = avatars[0];
+        sRenderer.sprite = characters[0].expressionSprites[0];
     }
 
     // Update is called once per frame
     void Update() {
-
-        if(Input.GetKeyDown(KeyCode.X)) {
-            sRenderer.sprite = avatars[(++index) % avatars.Count];
-        }
-        Debug.Log("Stresslevel: " + data.stressLevel);
-        sRenderer.sprite = data.GetExprByStressLvl(data.stressLevel);
+        sRenderer.sprite = characters[0].GetExprByStressLvl(characters[0].stressLevel);
 
     }
 }
