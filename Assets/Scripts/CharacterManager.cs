@@ -55,7 +55,12 @@ public class CharacterManager : MonoBehaviour
 
     }
 
-    public void QuestionAsked(int buttonIndex) {
+    public void AdviceGiven(int oceanType)
+    {
+        QuestionAsked(oceanType);
+    }
+
+        public void QuestionAsked(int buttonIndex) {
         float amount = currentCharacter.GetStressAmountByCategory(buttonIndex);
         currentCharacter.stressLevel += amount;
         if (currentCharacter.stressLevel < 0.0f) {

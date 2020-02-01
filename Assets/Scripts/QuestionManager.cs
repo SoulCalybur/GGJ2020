@@ -23,6 +23,10 @@ public class QuestionManager : MonoBehaviour {
         {"Social Media kann ihnen helfen neue Kontakte zu knüpfen", "Gehen Sie mehr aus sich heraus und reden sie mit Leuten. ","Erweitern Sie ihr soziales Umfeld mit Gleichgesinnten ","Sie sollten einem Club oder Verein beitreten. " },     //E
         {"Gewähren sie anderen denselben Respekt den sie empfangen möchten.", "Sorgen Sie zuerst dafür dass es Ihnen gut geht, bevor Sie sich um andere kümmern.", "Gehen sie mehr auf Menschen ein.","Suchen Sie sich andere Leute, mit denen Sie in Wettbewerb treten können." },     //A
         {"Sie sollten sich eine Bezugsperson zulegen", "Arbeiten sie an ihrem Selbstbild, vielleicht müssen sie ihre Einstellung zu sich selbst ändern","Sie müssen Nähe zulassen","Tun Sie das, was Ihnen Spaß macht, und machen Sie es zu einer Gewohnheit" } };   //N
+
+    private List<string>[] tmpAdviceList = new List<string>[5];
+
+
     public Button[] questionbuttons;
     public Button[] advicebuttons;
 
@@ -68,7 +72,6 @@ public class QuestionManager : MonoBehaviour {
         for (int i = 0; i < 5; i++)
         {
             tempQuestionList[i] = new List<string>();
-            print(questions[i]);
             tempQuestionList[i].AddRange(questions[i]);
 
         }
@@ -81,9 +84,23 @@ public class QuestionManager : MonoBehaviour {
         
     }
 
-    public void GiveAdvice(int buttonIndex) {
+    public void GiveAdvice(GameObject buttonText) {
 
-        characterM.QuestionAsked(buttonIndex);
+
+        //hole mir den text wieder aus dem button zurück
+        //und vergleiche ihn mit dem original set aus arrays in dieser methode
+        //wenn text gleich, rufe mit der indexstelle, die den Typen repräsentiert, die Methode giveadvice auf
+        for (int i = 0; i < 5; i++)
+        {
+            if (advice[i, adviceSetNumber] == buttonText.GetComponent<Text>().text) {
+                characterM.AdviceGiven(i);
+                break;
+
+            }
+        }
+
+
+
         ShuffleAdvice();
 
     }
