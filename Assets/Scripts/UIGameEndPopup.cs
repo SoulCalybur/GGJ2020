@@ -7,15 +7,16 @@ public class UIGameEndPopup : MonoBehaviour
     public GameObject Popup;
 
     private void OnEnable() {
-        GameSessionManager.onRoundEnd += ShowPopup;
     }
 
     void ShowPopup() {
         Popup.SetActive(true);
+        GameSessionManager.onRoundEnd -= ShowPopup;
+
     }
 
     void Start() {
-        
+        GameSessionManager.onRoundEnd += ShowPopup;
     }
 
     // Update is called once per frame

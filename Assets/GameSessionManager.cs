@@ -18,6 +18,10 @@ public class GameSessionManager : MonoBehaviour
         }
     }
 
+    public void ReturnToMainMenu()
+    {
+        GameManager.LoadLevel(1);
+    }
 
     // Start is called before the first frame update
     void Start()

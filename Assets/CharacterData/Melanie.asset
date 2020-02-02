@@ -20,11 +20,11 @@ MonoBehaviour:
     Es gibt noch soviel zu tun. "
   stressLevel: 0.702
   expressionSprites:
-  - {fileID: 21300000, guid: 075b658dcac780f4d9673d572ae23925, type: 3}
-  - {fileID: 21300000, guid: 3b676d0c9fa67d744bd7e5d83cb06211, type: 3}
-  - {fileID: 21300000, guid: d74983de7ff586249b649e7325a7d648, type: 3}
-  - {fileID: 21300000, guid: 8ee839cb65256cb408e0c5d03e15914b, type: 3}
-  - {fileID: 21300000, guid: 5d7eb6d8989ade2489cb2664d96800e4, type: 3}
+  - {fileID: 21300000, guid: 9e3c6d1af1d536c408576345b4b9dea3, type: 3}
+  - {fileID: 21300000, guid: d16d650f5711d3348a7c592fd35f8d78, type: 3}
+  - {fileID: 21300000, guid: d3083ce7e72e6354ba71fc7da993bdc3, type: 3}
+  - {fileID: 21300000, guid: 27fcdad20d1ee3d4497f42e3be785654, type: 3}
+  - {fileID: 21300000, guid: 5f2102139c943a64cb24f0aeb360385c, type: 3}
   stressAmount_O: 0.005
   stressAmount_C: 0.3
   stressAmount_E: 0.005
@@ -90,20 +90,34 @@ MonoBehaviour:
     paar mehr lernen, nur f\xFCr den Fall dass ich eine weitere Formation uralter
     Runenschrift finde, dann kann ich besser vorbereitet sein. Meine Eltern sehen
     mich sowieso viel zu viel, wenn ich noch 2 Stunden mehr in der Bibliothek verbringe\u2026 "
-  - 
+  - "Das ist es doch! Ich habe bis jetzt nur praktische Physik gelernt, was ist denn
+    wenn ich ein metaphysisches Problem bek\xE4mpfen muss? Ich muss sofort zwei Fachb\xFCcher
+    bestellen. McKath kann mir sicher auch einiges erkl\xE4ren... "
   reactions_category_C:
   - 'Das ist mein Problem? Ich plane noch nicht gut genug? Denken sie das ich nicht
     die Beste im planen bin? Dann werde ich noch besser planen, bestimmt gibt es
     noch vergeudete Minuten, die ich sinnvoll nutzen kann. '
-  - 
-  - 
-  - 
+  - 'Ich bin ein wandernder Tagesplan. Glauben sie das ich auch nur eine Sekunde
+    des Tages nicht verplant habe? Ihnen werde ich zeigen wie gut ich planen kann!
+    Machen sie sich schon mal einen Fluchtplan! '
+  - "Ist das eine Herausforderung? Wollen Sie um die Wette planen? Ich werde mehr
+    planen als Sie sich jemals vorstellen k\xF6nnen! Ziele werden auf sie herabregnen
+    wie ein magischer Schauer aus Sternen! "
+  - "Keine Zeit. Ich habe keine Zeit. Aber die Zeit muss sein. Planung kostet Zeit,
+    aber es spart Zeit geplant zu haben und nicht spontan planen zu m\xFCssen weil
+    man die Planung nicht vorausgeplant hat aber der Plan muss ordentlich geplant
+    sein... "
   reactions_category_E:
   - "Ich kann nicht noch mehr Zeit daf\xFCr ausgeben. Viel zu viele Leute sind von
     meinen Aktionen abh\xE4ngig, ich hab wirklich genug damit zu tun."
-  - 
-  - 
-  - 
+  - "Wenn sie eine M\xF6glichkeit finden noch mehr Leute f\xFCr meine Clubs anzuwerben,
+    bitte sagen sie es mir. Ich h\xE4nge jetzt schon eine halbe Stunde jeden Tag
+    Poster auf. "
+  - 'Ich bin den halben Tag umringt von Menschen. Ich bin ja froh wenn ich mal im
+    Schach gewinnen kann, aber manche Dinge muss ich halt alleine angehen, ist das
+    so falsch? '
+  - 'Nein, einfach nein, ich denke da haben sie einen Fehler in ihren Berechnungen
+    gemacht. '
   reactions_category_A:
   - "Was?! Aber\u2026 Ich mache doch praktisch nichts anderes! Jeden Tag gehe ich
     auf Menschen zu und erreiche ihre Herzen. Mache ich da einen Fehler?"
@@ -133,6 +147,12 @@ MonoBehaviour:
   reactions_category_N:
   - "Ich habe McKath und kein Problem mit mir. Nur weil sie mich nicht verstehen
     hei\xDFt das nicht das ich auf der falschen Seite stehe."
-  - 
-  - 
-  - 
+  - Seufz, sie klingen genau wie meine Mutter die nie Zuhause ist. Und da sie damit
+    keinen Erfolg hatte, wie kommen sie darauf dass es hier anders aussieht?
+  - "Ich kann mir das nicht l\xE4nger anh\xF6ren, ich wei\xDF was ich zu tun habe
+    und f\xFCr wen ich das alles hier tue. Warum ist das so ein gro\xDFes Problem
+    f\xFCr alle anderen? Sind sie vielleicht die Person hier die diesen Ratschlag
+    braucht? "
+  - "Erz\xE4hlen sie mir doch von ihren Problemen mit ihren Eltern. Waren sie unnahbar
+    und deswegen versuchen sie jetzt die Ratschl\xE4ge die sie ihnen geben wollten
+    auf andere Personen zu projizieren? W\xFCrde einiges erkl\xE4ren... "
