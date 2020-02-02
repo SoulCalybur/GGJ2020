@@ -15,6 +15,13 @@ public class CharacterManager : MonoBehaviour
 
     private SpriteRenderer sRenderer;
 
+
+    //Winning/Losing
+
+    private int clientsWon;
+    private int clientsLost;
+
+
     // CURRENTLY loaded
     CharacterData currentCharacter;
     int charIndex = 0;
@@ -22,12 +29,13 @@ public class CharacterManager : MonoBehaviour
     void Start() {
         sRenderer = CharacterSceneObj.GetComponent<SpriteRenderer>();
         currentCharacter = characters[charIndex];
-        currentCharacter.stressLevel = 0;
+        currentCharacter.stressLevel = 0.5f;
         UpdateCharExpressionSprite();
         progessBar.SetFillAmount(currentCharacter.stressLevel);
         characterText.text = currentCharacter.charName + "\n" + currentCharacter.introText;
         charIndex++;
-   
+        clientsWon = 0;
+        clientsLost = 0;
     }
 
     void loadNextCharacter() {
@@ -37,7 +45,7 @@ public class CharacterManager : MonoBehaviour
           //  return;
         }
         currentCharacter = characters[charIndex];
-        currentCharacter.stressLevel = 0;
+        currentCharacter.stressLevel = 0.5f;
         characterText.text = currentCharacter.charName + "\n" + currentCharacter.introText;
         UpdateCharExpressionSprite();
         progessBar.SetFillAmount(currentCharacter.stressLevel);
@@ -78,7 +86,9 @@ public class CharacterManager : MonoBehaviour
 
             progessBar.SetFillAmount(currentCharacter.stressLevel);
             UpdateCharExpressionSprite();
-
+            qstnMngr.EventMessage("Patient austherapiert.");
+            clientsWon++;
+            loadNextCharacter();
         }
         else if (currentCharacter.stressLevel > 1.0f)
         {
@@ -87,7 +97,8 @@ public class CharacterManager : MonoBehaviour
 
             progessBar.SetFillAmount(currentCharacter.stressLevel);
             UpdateCharExpressionSprite();
-
+            qstnMngr.EventMessage("Patient verloren.");
+            clientsLost++;
             loadNextCharacter();
         }
         else
@@ -152,6 +163,9 @@ public class CharacterManager : MonoBehaviour
 
             progessBar.SetFillAmount(currentCharacter.stressLevel);
             UpdateCharExpressionSprite();
+            qstnMngr.EventMessage("Patient austherapiert.");
+            clientsWon++;
+            loadNextCharacter();
 
         } else if (currentCharacter.stressLevel > 1.0f) {
             Debug.Log("Character stressLevel MAXED!");
@@ -159,7 +173,8 @@ public class CharacterManager : MonoBehaviour
 
             progessBar.SetFillAmount(currentCharacter.stressLevel);
             UpdateCharExpressionSprite();
-
+            qstnMngr.EventMessage("Patient verloren.");
+            clientsLost++;
             loadNextCharacter();
         } else {
             progessBar.SetFillAmount(currentCharacter.stressLevel);

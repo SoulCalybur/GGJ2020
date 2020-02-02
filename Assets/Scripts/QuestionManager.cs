@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
-
+using System.Collections;
 public class QuestionManager : MonoBehaviour {
 
     [Header("Linking")]
@@ -30,14 +30,22 @@ public class QuestionManager : MonoBehaviour {
     public Button[] questionbuttons;
     public Button[] advicebuttons;
 
+    public Text messageText;
+
     private int adviceSetNumber = 0, adviceAmount = 4, question;
 
+
+   // private var col;
 
     void Start() {
         InitContent();
     }
 
     private void InitContent() {
+
+        messageText.gameObject.SetActive(false);
+        //col = messageText.gameObject.GetComponent<Renderer>().material.color;
+
 
         questions = new string[5][];
 
@@ -158,12 +166,18 @@ public class QuestionManager : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update() {
-        
-    }
+
 
 
     */
+
+    void Update()
+    {
+        if (messageText.IsActive())
+        {
+           // col.a = (col.a + 0.00f) % 1;
+        }
+    }
 
     private void FillQuestionButtons()
     {
@@ -173,4 +187,23 @@ public class QuestionManager : MonoBehaviour {
         }
         questionIndex++;
     }
+
+    public void EventMessage(string message) {
+
+        messageText.text = message;
+        messageText.gameObject.SetActive(true);
+
+        StartCoroutine(ShowTemporaryFeedbackText());
+
+    }
+
+
+    IEnumerator ShowTemporaryFeedbackText()
+    {
+
+        yield return new WaitForSeconds(1);
+
+        messageText.gameObject.SetActive(false);
+    }
+
 }
