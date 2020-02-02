@@ -55,7 +55,6 @@ public class QuestionManager : MonoBehaviour {
         questions[2] = new string[3];
         questions[2][0] = "Sind Sie gerne unter Leuten?";
         questions[2][1] = "Verbringen Sie gerne Zeit alleine?";
-        questions[2][2] = "Ich bin Frage C von E?";
 
         //KATEGORIE A
         questions[3] = new string[4];
