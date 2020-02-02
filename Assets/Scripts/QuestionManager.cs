@@ -30,7 +30,8 @@ public class QuestionManager : MonoBehaviour {
     public Button[] questionbuttons;
     public Button[] advicebuttons;
 
-    public Text messageText;
+    public GameObject messageTextObject;
+    private Text messageText;
 
     private int adviceSetNumber = 0, adviceAmount = 4, question;
 
@@ -43,7 +44,7 @@ public class QuestionManager : MonoBehaviour {
 
     private void InitContent() {
 
-        messageText.gameObject.SetActive(false);
+        messageTextObject.gameObject.SetActive(false);
         //col = messageText.gameObject.GetComponent<Renderer>().material.color;
 
 
@@ -83,8 +84,8 @@ public class QuestionManager : MonoBehaviour {
 
         }
 
-        
 
+        messageText = messageTextObject.GetComponentInChildren<Text>();
 
         ShuffleAdvice();
         FillQuestionButtons();
@@ -191,7 +192,7 @@ public class QuestionManager : MonoBehaviour {
     public void EventMessage(string message) {
 
         messageText.text = message;
-        messageText.gameObject.SetActive(true);
+        messageTextObject.gameObject.SetActive(true);
 
         StartCoroutine(ShowTemporaryFeedbackText());
 
@@ -201,7 +202,7 @@ public class QuestionManager : MonoBehaviour {
     {
 
         messageText.text = message1;
-        messageText.gameObject.SetActive(true);
+        messageTextObject.gameObject.SetActive(true);
 
         StartCoroutine(ShowTemporaryFeedbackTextLong(message2));
 
@@ -213,7 +214,7 @@ public class QuestionManager : MonoBehaviour {
 
         yield return new WaitForSeconds(1);
 
-        messageText.gameObject.SetActive(false);
+        messageTextObject.gameObject.SetActive(false);
     }
 
 
@@ -234,7 +235,7 @@ public class QuestionManager : MonoBehaviour {
 
         yield return new WaitForSeconds(4);
 
-        messageText.gameObject.SetActive(false);
+        messageTextObject.gameObject.SetActive(false);
 
 
 
