@@ -101,9 +101,14 @@ MonoBehaviour:
   reactions_category_E:
   - "Ich kann nicht noch mehr Zeit daf\xFCr ausgeben. Viel zu viele Leute sind von
     meinen Aktionen abh\xE4ngig, ich hab wirklich genug damit zu tun."
-  - 
-  - 
-  - 
+  - "Wenn sie eine M\xF6glichkeit finden noch mehr Leute f\xFCr meine Clubs anzuwerben,
+    bitte sagen sie es mir. Ich h\xE4nge jetzt schon eine halbe Stunde jeden Tag
+    Poster auf. "
+  - 'Ich bin den halben Tag umringt von Menschen. Ich bin ja froh wenn ich mal im
+    Schach gewinnen kann, aber manche Dinge muss ich halt alleine angehen, ist das
+    so falsch? '
+  - 'Nein, einfach nein, ich denke da haben sie einen Fehler in ihren Berechnungen
+    gemacht. '
   reactions_category_A:
   - "Was?! Aber\u2026 Ich mache doch praktisch nichts anderes! Jeden Tag gehe ich
     auf Menschen zu und erreiche ihre Herzen. Mache ich da einen Fehler?"
@@ -133,6 +138,12 @@ MonoBehaviour:
   reactions_category_N:
   - "Ich habe McKath und kein Problem mit mir. Nur weil sie mich nicht verstehen
     hei\xDFt das nicht das ich auf der falschen Seite stehe."
-  - 
-  - 
-  - 
+  - Seufz, sie klingen genau wie meine Mutter die nie Zuhause ist. Und da sie damit
+    keinen Erfolg hatte, wie kommen sie darauf dass es hier anders aussieht?
+  - "Ich kann mir das nicht l\xE4nger anh\xF6ren, ich wei\xDF was ich zu tun habe
+    und f\xFCr wen ich das alles hier tue. Warum ist das so ein gro\xDFes Problem
+    f\xFCr alle anderen? Sind sie vielleicht die Person hier die diesen Ratschlag
+    braucht? "
+  - "Erz\xE4hlen sie mir doch von ihren Problemen mit ihren Eltern. Waren sie unnahbar
+    und deswegen versuchen sie jetzt die Ratschl\xE4ge die sie ihnen geben wollten
+    auf andere Personen zu projizieren? W\xFCrde einiges erkl\xE4ren... "
