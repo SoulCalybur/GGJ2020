@@ -22,27 +22,47 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8ee839cb65256cb408e0c5d03e15914b, type: 3}
   - {fileID: 21300000, guid: 5d7eb6d8989ade2489cb2664d96800e4, type: 3}
   stressAmount_O: -0.1
-  stressAmount_C: 0.3
+  stressAmount_C: 0.005
   stressAmount_E: 0.005
-  stressAmount_A: 0.005
+  stressAmount_A: 0.3
   stressAmount_N: 0.005
   answers_category_O:
-  - answer O
+  - "Hmmmm\u2026 "
+  - "Tja \u2026 also ich wei\xDF nicht so genau\u2026"
   answers_category_C:
-  - answer C
+  - Das geht mir zu weit.
+  - "Ich wei\xDF nicht genau worauf Sie hinauswollen. "
   answers_category_E:
-  - answer E
+  - "Hmmmm\u2026 "
+  - "Tja \u2026 also ich wei\xDF nicht so genau\u2026"
   answers_category_A:
-  - answer A
+  - Ich kann Ihnen nicht ganz folgen
+  - Das geht mir zu weit.
   answers_category_N:
-  - answer N
+  - "Ich wei\xDF nicht genau worauf Sie hinauswollen."
+  - Das ist mir unangenehm.
   reactions_category_O:
-  - REACTION O
+  - 'Klingt plausibel. '
+  - Leuchtet mir ein.
+  - JA. DAS IST ES.
+  - Das hat mir weitergeholfen.
   reactions_category_C:
-  - REACTION C
+  - Ich kann Ihnen nicht ganz folgen
+  - 'Aha. '
+  - 'Mhm. '
+  - Alles klar... ?
   reactions_category_E:
-  - REACTION E
+  - Ich kann Ihnen nicht ganz folgen
+  - Wenn Sie das meinen...
+  - 'Ob das hilft? '
+  - 'Wirklich? SIe denken, das hilft? '
   reactions_category_A:
-  - REACTION A
+  - Ich kann Ihnen nicht ganz folgen
+  - 'Das ist mir unangenehm. '
+  - "Aber\u2026 aber."
+  - DEN STRICK , SCHNELL!
   reactions_category_N:
-  - REACTION N
+  - Ich kann Ihnen nicht ganz folgen
+  - Hm...
+  - "Ich wei\xDF nicht... "
+  - Ok...
