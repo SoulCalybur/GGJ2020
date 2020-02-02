@@ -12,6 +12,9 @@ public class CharacterManager : MonoBehaviour
     public GameObject CharacterSceneObj;
     public ProgressBar progessBar;
     public Text characterText;
+    public Text wonAmountTxt;
+    public Text lostAmountTxt;
+
 
     private SpriteRenderer sRenderer;
 
@@ -36,12 +39,15 @@ public class CharacterManager : MonoBehaviour
         charIndex++;
         clientsWon = 0;
         clientsLost = 0;
+        qstnMngr.EventMessage("Willkommen!");
+
+
     }
 
     void loadNextCharacter() {
         if (charIndex >= characters.Count) {
             Debug.Log("Last character reached. End the Round");
-            GameSessionManager.RaiseOnEnd();
+            //GameSessionManager.RaiseOnEnd();
           //  return;
         }
         currentCharacter = characters[charIndex];
@@ -62,9 +68,10 @@ public class CharacterManager : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-
-        
+        setWinText();
     }
+
+
     void UpdateCharExpressionSprite() {
         sRenderer.sprite = currentCharacter.GetExprByStressLvl();
     }
@@ -107,6 +114,12 @@ public class CharacterManager : MonoBehaviour
             UpdateCharExpressionSprite();
         }
 
+    }
+
+    public void setWinText()
+    {
+        wonAmountTxt.text = "Patienten austherapiert: " + clientsWon;
+        lostAmountTxt.text = "Patienten suizidal: " + clientsLost;
     }
 
     public void SwitchAnswers(int oceanType)

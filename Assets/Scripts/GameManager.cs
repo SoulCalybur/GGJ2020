@@ -28,11 +28,11 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(2, LoadSceneMode.Additive);
             SceneManager.UnloadSceneAsync(1, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
         }
-        /*else if (n == 1)
+        else if (n == 1)
         {
             SceneManager.LoadScene(1, LoadSceneMode.Additive);
-            SceneManager.UnloadSceneAsync("JeremyScene");
-        }*/
+            SceneManager.UnloadSceneAsync(2, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
+        }
 
         //if(!SceneManager.GetSceneAt(n).isLoaded) 
     }
@@ -42,7 +42,6 @@ public class GameManager : MonoBehaviour
     {
         
     }
-
 
 
 }

@@ -9,8 +9,8 @@ public class Countdown : MonoBehaviour {
     public float timer = 180.0f;
     public Text uiText;
 
-
-    void Update() {
+  
+        void Update() {
         timer -= Time.deltaTime;
         if (timer <= 0) {
             timer = 0.0f;
