@@ -197,6 +197,16 @@ public class QuestionManager : MonoBehaviour {
 
     }
 
+    public void IntroMessageLong(string message1, string message2)
+    {
+
+        messageText.text = message1;
+        messageText.gameObject.SetActive(true);
+
+        StartCoroutine(ShowTemporaryFeedbackTextLong(message2));
+
+    }
+
 
     IEnumerator ShowTemporaryFeedbackText()
     {
@@ -204,6 +214,30 @@ public class QuestionManager : MonoBehaviour {
         yield return new WaitForSeconds(1);
 
         messageText.gameObject.SetActive(false);
+    }
+
+
+    IEnumerator ShowTemporaryFeedbackTextLong(string secondaryString)
+    {
+
+        yield return new WaitForSeconds(3);
+
+        messageText.text = secondaryString;
+        StartCoroutine(ShowTemporaryFeedbackTextLongSecondary());
+
+
+    }
+
+
+    IEnumerator ShowTemporaryFeedbackTextLongSecondary()
+    {
+
+        yield return new WaitForSeconds(4);
+
+        messageText.gameObject.SetActive(false);
+
+
+
     }
 
 }

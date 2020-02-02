@@ -39,7 +39,8 @@ public class CharacterManager : MonoBehaviour
         charIndex++;
         clientsWon = 0;
         clientsLost = 0;
-        qstnMngr.EventMessage("Willkommen!");
+
+        qstnMngr.IntroMessageLong("Welcher OCEAN-Type ist ihr Patient?\n", "Stellen Sie Fragen und\ngeben Sie Rat!");
 
 
     }
