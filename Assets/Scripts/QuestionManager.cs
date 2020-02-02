@@ -132,7 +132,7 @@ public class QuestionManager : MonoBehaviour {
         for (int i = 0; i < 5; i++)
         {
             int randomIndex = Random.Range(0, tmpStringList.Count);
-            advicebuttons[i].GetComponentInChildren<Text>().text = tmpStringList[randomIndex];
+            advicebuttons[i].GetComponentInChildren<Text>().text = tmpStringList[randomIndex] ?? "...";
             tmpStringList.RemoveAt(randomIndex);
 
         }
@@ -147,10 +147,10 @@ public class QuestionManager : MonoBehaviour {
     public void getNextQuestion(int i)
     {
 
-
-        questionbuttons[i].GetComponentInChildren<Text>().text = tempQuestionList[i][0];
-        if (tempQuestionList[i].Count > 0) tempQuestionList[i].Remove(tempQuestionList[i][0]);
-
+        if (tempQuestionList[i].Count > 0) { 
+            questionbuttons[i].GetComponentInChildren<Text>().text = tempQuestionList[i][0];
+            tempQuestionList[i].Remove(tempQuestionList[i][0]);
+        }
     }
     /*
     public void getNextQuestion(int buttonIndex) {
