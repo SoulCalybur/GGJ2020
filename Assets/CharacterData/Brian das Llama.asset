@@ -19,11 +19,11 @@ MonoBehaviour:
     aber eigentlich h\xE4tte ich jetzt einen Spa Termin."
   stressLevel: 0.702
   expressionSprites:
-  - {fileID: 21300000, guid: 9b93ca21f2b525c4e866e062b40376c7, type: 3}
-  - {fileID: 21300000, guid: 9b93ca21f2b525c4e866e062b40376c7, type: 3}
-  - {fileID: 21300000, guid: 9b93ca21f2b525c4e866e062b40376c7, type: 3}
-  - {fileID: 21300000, guid: f5505dbbf0f88c443b8416239642dbc7, type: 3}
-  - {fileID: 21300000, guid: f5505dbbf0f88c443b8416239642dbc7, type: 3}
+  - {fileID: 21300000, guid: 8b131d21e4c39f34bb0bf98da78d48b4, type: 3}
+  - {fileID: 21300000, guid: 3d5186016d1169f4fb4c10f4536746ed, type: 3}
+  - {fileID: 21300000, guid: 0e443e47419d6f04985f16f4fc34b44f, type: 3}
+  - {fileID: 21300000, guid: ab2bd6a5cf65501468379330cfbbbc21, type: 3}
+  - {fileID: 21300000, guid: ab2bd6a5cf65501468379330cfbbbc21, type: 3}
   stressAmount_O: 0.005
   stressAmount_C: 0.3
   stressAmount_E: -0.1
