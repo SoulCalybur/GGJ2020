@@ -201,7 +201,7 @@ public class QuestionManager : MonoBehaviour {
     IEnumerator ShowTemporaryFeedbackText()
     {
 
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
 
         messageText.gameObject.SetActive(false);
     }
