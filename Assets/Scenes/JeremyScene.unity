@@ -1748,11 +1748,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characters:
-  - {fileID: 11400000, guid: bee7151ff64e83743a1ec99341feddea, type: 2}
-  - {fileID: 11400000, guid: bee7151ff64e83743a1ec99341feddea, type: 2}
-  - {fileID: 11400000, guid: bee7151ff64e83743a1ec99341feddea, type: 2}
-  - {fileID: 11400000, guid: bee7151ff64e83743a1ec99341feddea, type: 2}
-  - {fileID: 11400000, guid: bee7151ff64e83743a1ec99341feddea, type: 2}
+  - {fileID: 11400000, guid: 93b41da4d22d29f4cb2c9d0d3a04543e, type: 2}
+  - {fileID: 11400000, guid: 6d6fde1eb28312a42bcc1dc92d31a94e, type: 2}
+  - {fileID: 11400000, guid: ec197164d6eb6f54b837fcf77c465bf7, type: 2}
+  - {fileID: 11400000, guid: 4917e27a1e12431408423bae269b8dd4, type: 2}
+  - {fileID: 11400000, guid: 6978600fab18c1448a6bc0f1a3c59fc7, type: 2}
   qstnMngr: {fileID: 96109557}
   CharacterSceneObj: {fileID: 2025937903}
   progessBar: {fileID: 195539655}

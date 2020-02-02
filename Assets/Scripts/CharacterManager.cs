@@ -111,20 +111,21 @@ public class CharacterManager : MonoBehaviour
 
     public void SwitchAnswers(int oceanType)
     {
+        characterText.text = currentCharacter .charName + "\n";
         switch (oceanType)
         {
             case 0:
-                characterText.text = currentCharacter.answers_category_O[0] ?? "...";
+                characterText.text += currentCharacter.answers_category_O[0] ?? "...";
                 break;
             case 1:
-                characterText.text = currentCharacter.answers_category_C[0] ?? "..."; break;
+                characterText.text += currentCharacter.answers_category_C[0] ?? "..."; break;
             case 2:
-                characterText.text = currentCharacter.answers_category_E[0] ?? "..."; break;
+                characterText.text += currentCharacter.answers_category_E[0] ?? "..."; break;
             case 3:
-                characterText.text = currentCharacter.answers_category_A[0] ?? "..."; break;
+                characterText.text += currentCharacter.answers_category_A[0] ?? "..."; break;
             case 4:
-                characterText.text = currentCharacter.answers_category_N[0] ?? "..."; break;
-            default: characterText.text = "..."; break;
+                characterText.text += currentCharacter.answers_category_N[0] ?? "..."; break;
+            default: characterText.text += "..."; break;
 
         }
 
@@ -133,19 +134,21 @@ public class CharacterManager : MonoBehaviour
 
     public void SwitchReaction(int oceanType)
     {
+        characterText.text = currentCharacter.charName + "\n";
+
         switch (oceanType)
         {
             case 0:
-                characterText.text = currentCharacter.reactions_category_O[0] ?? "...";break;
+                characterText.text += currentCharacter.reactions_category_O[0] ?? "...";break;
             case 1:
-                characterText.text = currentCharacter.reactions_category_C[0] ?? "..."; break;
+                characterText.text += currentCharacter.reactions_category_C[0] ?? "..."; break;
             case 2:
-                characterText.text = currentCharacter.reactions_category_E[0] ?? "..."; break;
+                characterText.text += currentCharacter.reactions_category_E[0] ?? "..."; break;
             case 3:
-                characterText.text = currentCharacter.reactions_category_A[0] ?? "..."; break;
+                characterText.text += currentCharacter.reactions_category_A[0] ?? "..."; break;
             case 4:
-                characterText.text = currentCharacter.reactions_category_N[0] ?? "..."; break;
-            default: characterText.text = "..."; break;
+                characterText.text += currentCharacter.reactions_category_N[0] ?? "..."; break;
+            default: characterText.text += "..."; break;
 
         }
 
