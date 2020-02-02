@@ -18,11 +18,11 @@ MonoBehaviour:
     (seufz). Ich f\xFChle mich hier einfach nicht wohl.  "
   stressLevel: 0.702
   expressionSprites:
-  - {fileID: 21300000, guid: 075b658dcac780f4d9673d572ae23925, type: 3}
-  - {fileID: 21300000, guid: 3b676d0c9fa67d744bd7e5d83cb06211, type: 3}
-  - {fileID: 21300000, guid: d74983de7ff586249b649e7325a7d648, type: 3}
-  - {fileID: 21300000, guid: 8ee839cb65256cb408e0c5d03e15914b, type: 3}
-  - {fileID: 21300000, guid: 5d7eb6d8989ade2489cb2664d96800e4, type: 3}
+  - {fileID: 21300000, guid: 5da49df9ec9bd4345b4a5097d741d2c8, type: 3}
+  - {fileID: 21300000, guid: 45ff41518371f934f8d8702b9b82eaac, type: 3}
+  - {fileID: 21300000, guid: 396821cea1c491b4fa442d09bd8b895b, type: 3}
+  - {fileID: 21300000, guid: a19818047b19ab440a396918f6c1fcda, type: 3}
+  - {fileID: 21300000, guid: 1d027356832abd94e80004fe3abdbe3f, type: 3}
   stressAmount_O: 0.005
   stressAmount_C: 0.005
   stressAmount_E: 0.3

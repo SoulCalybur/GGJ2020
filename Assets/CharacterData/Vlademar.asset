@@ -19,11 +19,11 @@ MonoBehaviour:
     eine Erdnuss zu f\xFCttern.\u201D "
   stressLevel: 0.702
   expressionSprites:
-  - {fileID: 21300000, guid: 075b658dcac780f4d9673d572ae23925, type: 3}
-  - {fileID: 21300000, guid: 3b676d0c9fa67d744bd7e5d83cb06211, type: 3}
-  - {fileID: 21300000, guid: d74983de7ff586249b649e7325a7d648, type: 3}
-  - {fileID: 21300000, guid: 8ee839cb65256cb408e0c5d03e15914b, type: 3}
-  - {fileID: 21300000, guid: 5d7eb6d8989ade2489cb2664d96800e4, type: 3}
+  - {fileID: 21300000, guid: a9db455ad40845f46b7da17fd806d941, type: 3}
+  - {fileID: 21300000, guid: 0998493741a852549aa5869a740b6bb4, type: 3}
+  - {fileID: 21300000, guid: c2050a906ace96949a12f7e9566b7593, type: 3}
+  - {fileID: 21300000, guid: eb0da9738c6ec024c820c70fd7303410, type: 3}
+  - {fileID: 21300000, guid: cca4bf7bfa5c00a408a87d43314158c9, type: 3}
   stressAmount_O: 0.3
   stressAmount_C: 0.005
   stressAmount_E: 0.005

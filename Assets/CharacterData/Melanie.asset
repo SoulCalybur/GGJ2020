@@ -20,11 +20,11 @@ MonoBehaviour:
     Es gibt noch soviel zu tun. "
   stressLevel: 0.702
   expressionSprites:
-  - {fileID: 21300000, guid: 075b658dcac780f4d9673d572ae23925, type: 3}
-  - {fileID: 21300000, guid: 3b676d0c9fa67d744bd7e5d83cb06211, type: 3}
-  - {fileID: 21300000, guid: d74983de7ff586249b649e7325a7d648, type: 3}
-  - {fileID: 21300000, guid: 8ee839cb65256cb408e0c5d03e15914b, type: 3}
-  - {fileID: 21300000, guid: 5d7eb6d8989ade2489cb2664d96800e4, type: 3}
+  - {fileID: 21300000, guid: 9e3c6d1af1d536c408576345b4b9dea3, type: 3}
+  - {fileID: 21300000, guid: d16d650f5711d3348a7c592fd35f8d78, type: 3}
+  - {fileID: 21300000, guid: d3083ce7e72e6354ba71fc7da993bdc3, type: 3}
+  - {fileID: 21300000, guid: 27fcdad20d1ee3d4497f42e3be785654, type: 3}
+  - {fileID: 21300000, guid: 5f2102139c943a64cb24f0aeb360385c, type: 3}
   stressAmount_O: 0.005
   stressAmount_C: 0.3
   stressAmount_E: 0.005
