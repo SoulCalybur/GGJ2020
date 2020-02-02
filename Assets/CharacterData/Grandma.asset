@@ -12,15 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 200370f8b670edf479a560a3aa82699a, type: 3}
   m_Name: Grandma
   m_EditorClassIdentifier: 
-  stressLevel: 0
+  charName: "Oma G\xFCnther"
+  introText: "Hallo lieber Doktor! Hach es freut mich dass ich endlich einen Termin
+    bekommen habe, aber ich habe schon soo viel von Ihnen geh\xF6rt! Selbst in zehn
+    Jahren wird man noch von Ihnen reden, h\xF6ren Sie! Oh, ich bin gespannt was
+    Sie mir empfehlen, meine Enkel hoffen alle, dass ich dann weniger rede, aber
+    das denke ich nicht, nicht wahr?"
+  stressLevel: 0.702
   expressionSprites:
   - {fileID: 21300000, guid: 075b658dcac780f4d9673d572ae23925, type: 3}
   - {fileID: 21300000, guid: 3b676d0c9fa67d744bd7e5d83cb06211, type: 3}
   - {fileID: 21300000, guid: d74983de7ff586249b649e7325a7d648, type: 3}
   - {fileID: 21300000, guid: 8ee839cb65256cb408e0c5d03e15914b, type: 3}
   - {fileID: 21300000, guid: 5d7eb6d8989ade2489cb2664d96800e4, type: 3}
-  stressLvlInscrease: 0.3
-  stressLvlDecrease: 0.05
   stressAmount_O: -0.1
   stressAmount_C: 0.3
   stressAmount_E: 0.005

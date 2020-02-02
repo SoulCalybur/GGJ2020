@@ -1,6 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
+using UnityEngine.UI;
 using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
@@ -9,6 +9,7 @@ public class CharacterManager : MonoBehaviour
 
     public GameObject CharacterSceneObj;
     public ProgressBar progessBar;
+    public Text characterText;
 
     private SpriteRenderer sRenderer;
 
@@ -22,7 +23,9 @@ public class CharacterManager : MonoBehaviour
         currentCharacter.stressLevel = 0;
         UpdateCharExpressionSprite();
         progessBar.SetFillAmount(currentCharacter.stressLevel);
+        characterText.text = currentCharacter.charName + "\n" + currentCharacter.introText;
         charIndex++;
+   
     }
 
     void loadNextCharacter() {
@@ -33,6 +36,7 @@ public class CharacterManager : MonoBehaviour
         }
         currentCharacter = characters[charIndex];
         currentCharacter.stressLevel = 0;
+        characterText.text = currentCharacter.charName + "\n" + currentCharacter.introText;
         UpdateCharExpressionSprite();
         progessBar.SetFillAmount(currentCharacter.stressLevel);
 
@@ -58,30 +62,56 @@ public class CharacterManager : MonoBehaviour
     public void AdviceGiven(int oceanType)
     {
         QuestionAsked(oceanType);
+        SwitchReaction(oceanType);
+        //TODO: 
+
+
+
     }
 
-        public void QuestionAsked(int buttonIndex) {
-        float amount = currentCharacter.GetStressAmountByCategory(buttonIndex);
-        currentCharacter.stressLevel += amount;
-        if (currentCharacter.stressLevel < 0.0f) {
-            Debug.Log("Character stressLevel ZERO!");
-            currentCharacter.stressLevel = 0.0f;
+    public void SwitchReaction(int oceanType)
+    {
+        switch (oceanType)
+        {
+            case 0:
+                characterText.text = currentCharacter.answers_category_O[0];
+                break;
+            case 1:
+                characterText.text = currentCharacter.answers_category_C[0]; break;
+            case 2:
+                characterText.text = currentCharacter.answers_category_E[0]; break;
+            case 3:
+                characterText.text = currentCharacter.answers_category_A[0]; break;
+            case 4:
+                characterText.text = currentCharacter.answers_category_N[0]; break;
+            default: break;
 
-            progessBar.SetFillAmount(currentCharacter.stressLevel);
-            UpdateCharExpressionSprite();
-
-        } else if (currentCharacter.stressLevel > 1.0f) {
-            Debug.Log("Character stressLevel MAXED!");
-            currentCharacter.stressLevel = 1.0f;
-
-            progessBar.SetFillAmount(currentCharacter.stressLevel);
-            UpdateCharExpressionSprite();
-
-            loadNextCharacter();
-        } else {
-            progessBar.SetFillAmount(currentCharacter.stressLevel);
-            UpdateCharExpressionSprite();
         }
+
     }
+
+    public void QuestionAsked(int buttonIndex) {
+    float amount = currentCharacter.GetStressAmountByCategory(buttonIndex);
+    currentCharacter.stressLevel += amount;
+    if (currentCharacter.stressLevel < 0.0f) {
+        Debug.Log("Character stressLevel ZERO!");
+        currentCharacter.stressLevel = 0.0f;
+
+        progessBar.SetFillAmount(currentCharacter.stressLevel);
+        UpdateCharExpressionSprite();
+
+    } else if (currentCharacter.stressLevel > 1.0f) {
+        Debug.Log("Character stressLevel MAXED!");
+        currentCharacter.stressLevel = 1.0f;
+
+        progessBar.SetFillAmount(currentCharacter.stressLevel);
+        UpdateCharExpressionSprite();
+
+        loadNextCharacter();
+    } else {
+        progessBar.SetFillAmount(currentCharacter.stressLevel);
+        UpdateCharExpressionSprite();
+    }
+}
 
 }
