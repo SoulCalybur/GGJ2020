@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 200370f8b670edf479a560a3aa82699a, type: 3}
+  m_Name: Hexe Elena Krusch
+  m_EditorClassIdentifier: 
+  charName: Hexe Elena Krusch
+  introText: "Guten Tag. Ich f\xFChle mich in letzter Zeit nicht wohl, und bin mir
+    nicht ganz sicher, woran es liegt.  "
+  stressLevel: 0.702
+  expressionSprites:
+  - {fileID: 21300000, guid: 075b658dcac780f4d9673d572ae23925, type: 3}
+  - {fileID: 21300000, guid: 3b676d0c9fa67d744bd7e5d83cb06211, type: 3}
+  - {fileID: 21300000, guid: d74983de7ff586249b649e7325a7d648, type: 3}
+  - {fileID: 21300000, guid: 8ee839cb65256cb408e0c5d03e15914b, type: 3}
+  - {fileID: 21300000, guid: 5d7eb6d8989ade2489cb2664d96800e4, type: 3}
+  stressAmount_O: 0.005
+  stressAmount_C: 0.3
+  stressAmount_E: 0.005
+  stressAmount_A: -0.1
+  stressAmount_N: 0.005
+  answers_category_O:
+  - "Auch wenn ich kein Teil des Hexenzirkels mehr bin, fliege ich doch an der Walpurgisnacht
+    drei Mal um meinen Turm, wie jede Hexe, die was auf sich h\xE4lt. Ich freue mich
+    immer unheimlich darauf.  "
+  - 'Was meinen Sie? Neue Trankrezepte immer, und vor einiger Zeit bin ich auf Drohnenpost
+    umgestiegen. Diese Werbeprospekte haben nicht zu viel versprochen. '
+  answers_category_C:
+  - "Nun, es kann nie ordentlich genug sein. Ich pers\xF6nlich habe alle meine Tr\xE4nke
+    kategorisiert und etikettiert. Sonst vergisst man sp\xE4testens nach zwanzig
+    Jahren, wo alles ist.  "
+  - 'Diese Sitzung habe ich schon seit 10 Jahren geplant. Jetzt ist es endlich soweit.   '
+  answers_category_E:
+  - "Nein. Nie, genau genommen. Dies ist das erste Mal seit \xFCber 200 Jahren, dass
+    ich meinen Turm verlasse. Meine Nahrung und Zutaten beziehe ich per Drohne, die
+    neuste Technik ist wirklich faszinierend.  "
+  - "Ich habe nichts dagegen, den ganzen Tag in meinem Turm Tr\xE4nke zu brauen.
+    Ich versinke dann immer in meiner Arbeit.  "
+  answers_category_A:
+  - "Nein, mit Hexenzirkeln habe ich es schon seit 387 Jahren nicht mehr probiert.
+    Seitdem\u2026 Ach, ich die Erinnerung schmerzt."
+  - "Nicht mehr. Schlie\xDFlich bin ich absichtlich weggezogen, um genau so etwas
+    nicht mehr zu haben.  "
+  answers_category_N:
+  - "Wie ein Stein, auf den jede Woche ein Tropfen kalter Hexentrank f\xE4llt. Ich
+    w\xFCrde sagen, ziemlich gut.  "
+  - 'Nur mit mir selbst. Ich muss zugeben, dass ich mich auch manchmal anschreie.  '
+  reactions_category_O:
+  - "Das werde ich versuchen! Warum nicht! Vielleicht kann ich statt Tr\xE4nken einmal
+    fl\xE4chen\xFCberdeckenden Rauch erzeugen, der das Umland beeinflusst  //Stresslevel
+    steigt, evtl Zeitungsartikel: Pl\xF6tzliches Waldsterben im Trabiner Wald (Foto
+    von kahlem Wald). Nach Ausbreitung eines unbekanntem Rauches verstarb ein Gro\xDFteil
+    des Waldes fast sofort. D\xF6rfer in der Umgebung wurden evakuiert. Folgen sie
+    folgenden Schritten, um sicher zu bleiben: 1. \u2026  "
+  - "Das werde ich versuchen! Warum nicht! Vielleicht kann ich einen fl\xE4chen\xFCberdeckenden
+    Rauch erzeugen, der das Umland beeinflusst  //Stresslevel steigt, evtl Zeitungsartikel:
+    Pl\xF6tzliches Waldsterben im Trabiner Wald (Foto von kahlem Wald). Nach Ausbreitung
+    eines unbekannten Rauches verstarb ein Gro\xDFteil des Waldes fast sofort. D\xF6rfer
+    in der Umgebung wurden evakuiert. Folgen sie folgenden Schritten, um sicher zu
+    bleiben: 1. \u2026  "
+  - "Neue Herausforderungen\u2026 Ich wei\xDF nicht. Ich f\xFChle mich nach meinen
+    letzten Unternehmungen nicht besonders energetisiert. Ich habe mich ja bem\xFCht,
+    und allen auf eine subtile Art und Weise mitgeteilt, wie ich mich f\xFChle, aber
+    als zufrieden m\xF6chte ich mich nicht bezeichnen. Haben Sie vielleicht noch
+    einen anderen Ratschlag?"
+  - "Nun, vielleicht sollte ich das Experiment mit dem Gas nochmals auf moderne Art
+    und Weise versuchen, und ein kleines Flugzeug mieten. Hm, eine \xDCberlegung
+    w\xE4re es wert. Sie meinen, ich werde mich danach besser f\xFChlen?  "
+  reactions_category_C:
+  - "Einen F\xFCnf-Jahresplan? Wissen Sie eigentlich, wie alt ich bin? Ich mache
+    hundert-Jahres-Pl\xE4ne!  "
+  - "Ich schreibe schon seit jahrhunderten Tageb\xFCcher! Ein ganzes Stockwerk meines
+    Turmes ist nur ihnen gewidmet. Nat\xFCrlich alle nach Datum geordnet. Ich glaube
+    kaum, dass das mir weiterhilft.  "
+  - "Sind Sie sich wirklich sicher, dass mir das hilft? Meine Tageb\xFCcher summieren
+    sich \xFCber 1000!  "
+  - "Ich glaub ich wei\xDF was ich tun werde! Und denken Sie nicht, dass ich ernsthaft
+    weiter an meinen Tageb\xFCchern schreiben werde!  "
+  reactions_category_E:
+  - "Ich k\xF6nnte nat\xFCrlich noch einmal versuchen, andere Hexen ausfindig zu
+    machen. Daf\xFCr ist eine gute Vorbereitung erforderlich, verschiedene Gifte
+    und Fluchtr\xE4nke sind ein Muss.  "
+  - "Einem Verein! Nun gut, ich kann mich auf die Suche machen, ob derartige Einrichtungen
+    in der Umgebung verf\xFCgbar sind. Es k\xF6nnte schwierig sein, etwas zu finden,
+    das mit meinen Interessen \xFCbereinstimmt.  "
+  - "Vor einiger Zeit habe ich einen Verein gefunden, eine Kochgruppe. Doch sie sind
+    alle kreischend davon gerannt, als sie meinem Eintopf mit eingelegten Froschschenkeln,
+    Vogelzungen und Bei\xDFgras gesehen haben. Ich bin etwas demotiviert, ist das
+    wirklich der richtige Ansatz?  "
+  - "Eine Online-Kochgruppe, so etwas etwa meinen Sie? Dort habe ich eine Frau kennengelernt,
+    die sich auch f\xFCr eine Hexe hielt. Aber als ich dann auf meinem Besen tats\xE4chlich
+    bei ihr ankam, ist sie ohnm\xE4chtig geworden. Ich glaube irgendwie, dass das
+    nicht der richtige Weg ist.  "
+  reactions_category_A:
+  - "Sie meinen, ich selber soll eine aktivere Rolle einnehmen? Das k\xF6nnte es
+    sein, aber ich wei\xDF immer noch damals, als ich herbe entt\xE4uscht wurde,
+    von Elianna\u2026  "
+  - "Vielleicht ist es das, was mir Unwohlsein bereitet hat. Eventuell fehlt mir
+    wirklich der Kontakt zu anderen. Fr\xFCher war ich Eliannas beste Freundin, vielleicht
+    hat sie mir inzwischen verziehen, bis naja, sie mir einen Warzentrank ins Fr\xFChst\xFCck
+    gemischt hat.  "
+  - 'Eventuell kann ich mir einen Anti-Warzentrank mitnehmen, dann geht es mir auf
+    jeden Fall gut, auch wenn Elianna das mit den Warzen noch einmal versuchen sollte,
+    bin ich so gewappnet. Hm, ich sollte vielleicht selber einen Trank mitbringen,
+    wenn ich sie treffe.  '
+  - "Sie meinen, ich sollte den anderen Hexen keinen Schluckauf-trank verabreichen?
+    Nun, ich wei\xDF nicht. Vor 300 Jahren hat Eilanna mir schlie\xDFlich auch Warzentrank
+    verpasst. Diese Erniedrigung!  "
+  reactions_category_N:
+  - "Nun, ich hindere keinen daran, sich meinem Turm zu n\xE4hern. Tats\xE4chlich
+    kommt aber nie jemand hoch, selbst wenn ich mir M\xFChe gebe, und D\xE4mpfe meiner
+    leckersten Tr\xE4nke nach unten wabern lasse. Es k\xF6nnte allerdings an meiner
+    Katze liegen. Sie lebt dort unten, und versucht immer, den Brieftr\xE4ger zu
+    bei\xDFen. Wie er immer rennt! Immer wieder am\xFCsant.  "
+  - "In dem Fall werde ich mich weiter der Kunst des Trankbrauens widmen. Tr\xE4nke
+    sind faszinierend! Sehen Sie sich die Qualit\xE4t dieses Verj\xFCngungselixier
+    an, das ich gerade benutze. Prall, wie intendiert.  "
+  - "Mein Selbstbild. Ich werde dar\xFCber nachdenken. Vielleicht kann ich den Po
+    noch ab\xE4ndern? Hm, Sie haben Recht, es gibt da immer M\xF6glichkeiten zur
+    Verbesserung.  "
+  - "Meinen Sie? Ich kann mal wieder Kontakt zu meiner Katze aufnehmen, etwas in
+    diese Richtung? Sie lebt schlie\xDFlich ganz unten am Turm, aber versorgt sich
+    ganz gut selbst. Ich kann sie nat\xFCrlich mal wieder streicheln, wenn Sie meinen.  "

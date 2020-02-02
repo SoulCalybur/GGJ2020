@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 200370f8b670edf479a560a3aa82699a, type: 3}
-  m_Name: Grandma 1
+  m_Name: Oma
   m_EditorClassIdentifier: 
   charName: Oma Walfriede Engelgrund
   introText: "Hallo lieber Doktor! Hach es freut mich dass ich endlich einen Termin
