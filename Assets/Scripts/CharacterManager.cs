@@ -34,18 +34,22 @@ public class CharacterManager : MonoBehaviour
         if (charIndex >= characters.Count) {
             Debug.Log("Last character reached. End the Round");
             GameSessionManager.RaiseOnEnd();
-            return;
+          //  return;
         }
         currentCharacter = characters[charIndex];
         currentCharacter.stressLevel = 0;
         characterText.text = currentCharacter.charName + "\n" + currentCharacter.introText;
         UpdateCharExpressionSprite();
         progessBar.SetFillAmount(currentCharacter.stressLevel);
-
         charIndex++;
+        charIndex =  (charIndex) % characters.Count;
         Debug.Log("CharIndex = " + charIndex);
 
         qstnMngr.OnNewClientEnter();
+
+
+
+
     }
 
     // Update is called once per frame
@@ -63,57 +67,104 @@ public class CharacterManager : MonoBehaviour
 
     public void AdviceGiven(int oceanType)
     {
-        QuestionAsked(oceanType);
         SwitchReaction(oceanType);
-        //TODO: 
 
+        float amount = currentCharacter.GetStressAmountByCategory(oceanType);
+        currentCharacter.stressLevel += amount;
+        if (currentCharacter.stressLevel < 0.0f)
+        {
+            Debug.Log("Character stressLevel ZERO!");
+            currentCharacter.stressLevel = 0.0f;
 
+            progessBar.SetFillAmount(currentCharacter.stressLevel);
+            UpdateCharExpressionSprite();
+
+        }
+        else if (currentCharacter.stressLevel > 1.0f)
+        {
+            Debug.Log("Character stressLevel MAXED!");
+            currentCharacter.stressLevel = 1.0f;
+
+            progessBar.SetFillAmount(currentCharacter.stressLevel);
+            UpdateCharExpressionSprite();
+
+            loadNextCharacter();
+        }
+        else
+        {
+            progessBar.SetFillAmount(currentCharacter.stressLevel);
+            UpdateCharExpressionSprite();
+        }
 
     }
+
+    public void SwitchAnswers(int oceanType)
+    {
+        switch (oceanType)
+        {
+            case 0:
+                characterText.text = currentCharacter.answers_category_O[0] ?? "...";
+                break;
+            case 1:
+                characterText.text = currentCharacter.answers_category_C[0] ?? "..."; break;
+            case 2:
+                characterText.text = currentCharacter.answers_category_E[0] ?? "..."; break;
+            case 3:
+                characterText.text = currentCharacter.answers_category_A[0] ?? "..."; break;
+            case 4:
+                characterText.text = currentCharacter.answers_category_N[0] ?? "..."; break;
+            default: characterText.text = "..."; break;
+
+        }
+
+    }
+
 
     public void SwitchReaction(int oceanType)
     {
         switch (oceanType)
         {
             case 0:
-                characterText.text = currentCharacter.answers_category_O[0];
-                break;
+                characterText.text = currentCharacter.reactions_category_O[0] ?? "...";break;
             case 1:
-                characterText.text = currentCharacter.answers_category_C[0]; break;
+                characterText.text = currentCharacter.reactions_category_C[0] ?? "..."; break;
             case 2:
-                characterText.text = currentCharacter.answers_category_E[0]; break;
+                characterText.text = currentCharacter.reactions_category_E[0] ?? "..."; break;
             case 3:
-                characterText.text = currentCharacter.answers_category_A[0]; break;
+                characterText.text = currentCharacter.reactions_category_A[0] ?? "..."; break;
             case 4:
-                characterText.text = currentCharacter.answers_category_N[0]; break;
-            default: break;
+                characterText.text = currentCharacter.reactions_category_N[0] ?? "..."; break;
+            default: characterText.text = "..."; break;
 
         }
 
     }
 
     public void QuestionAsked(int buttonIndex) {
-    float amount = currentCharacter.GetStressAmountByCategory(buttonIndex);
-    currentCharacter.stressLevel += amount;
-    if (currentCharacter.stressLevel < 0.0f) {
-        Debug.Log("Character stressLevel ZERO!");
-        currentCharacter.stressLevel = 0.0f;
 
-        progessBar.SetFillAmount(currentCharacter.stressLevel);
-        UpdateCharExpressionSprite();
+        SwitchAnswers(buttonIndex);
 
-    } else if (currentCharacter.stressLevel > 1.0f) {
-        Debug.Log("Character stressLevel MAXED!");
-        currentCharacter.stressLevel = 1.0f;
+        float amount = currentCharacter.GetStressAmountByCategory(buttonIndex);
+        currentCharacter.stressLevel += amount;
+        if (currentCharacter.stressLevel < 0.0f) {
+            Debug.Log("Character stressLevel ZERO!");
+            currentCharacter.stressLevel = 0.0f;
 
-        progessBar.SetFillAmount(currentCharacter.stressLevel);
-        UpdateCharExpressionSprite();
+            progessBar.SetFillAmount(currentCharacter.stressLevel);
+            UpdateCharExpressionSprite();
 
-        loadNextCharacter();
-    } else {
-        progessBar.SetFillAmount(currentCharacter.stressLevel);
-        UpdateCharExpressionSprite();
+        } else if (currentCharacter.stressLevel > 1.0f) {
+            Debug.Log("Character stressLevel MAXED!");
+            currentCharacter.stressLevel = 1.0f;
+
+            progessBar.SetFillAmount(currentCharacter.stressLevel);
+            UpdateCharExpressionSprite();
+
+            loadNextCharacter();
+        } else {
+            progessBar.SetFillAmount(currentCharacter.stressLevel);
+            UpdateCharExpressionSprite();
+        }
     }
-}
 
 }
