@@ -83,6 +83,18 @@ public class QuestionManager : MonoBehaviour {
         
     }
 
+    public void OnNewClientEnter() {
+        //erzeuge 5 listen in einem array
+        for (int i = 0; i < 5; i++)
+        {
+            tempQuestionList[i].Clear();
+            tempQuestionList[i] = new List<string>();
+            tempQuestionList[i].AddRange(questions[i]);
+            questionbuttons[i].GetComponentInChildren<Text>().text = tempQuestionList[i][0];
+
+        }
+    }
+
     public void GiveAdvice(GameObject buttonText) {
 
 

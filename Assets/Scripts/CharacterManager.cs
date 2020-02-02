@@ -7,6 +7,8 @@ public class CharacterManager : MonoBehaviour
 {   
     public List<CharacterData> characters;
 
+    public QuestionManager qstnMngr;
+
     public GameObject CharacterSceneObj;
     public ProgressBar progessBar;
     public Text characterText;
@@ -42,8 +44,8 @@ public class CharacterManager : MonoBehaviour
 
         charIndex++;
         Debug.Log("CharIndex = " + charIndex);
-        
 
+        qstnMngr.OnNewClientEnter();
     }
 
     // Update is called once per frame
