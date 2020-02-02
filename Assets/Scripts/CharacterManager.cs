@@ -87,7 +87,7 @@ public class CharacterManager : MonoBehaviour
 
             progessBar.SetFillAmount(currentCharacter.stressLevel);
             UpdateCharExpressionSprite();
-
+            qstnMngr.EventMessage("Patient has left.");
             loadNextCharacter();
         }
         else
@@ -159,6 +159,7 @@ public class CharacterManager : MonoBehaviour
 
             progessBar.SetFillAmount(currentCharacter.stressLevel);
             UpdateCharExpressionSprite();
+            qstnMngr.EventMessage("Patient has left.");
 
             loadNextCharacter();
         } else {
