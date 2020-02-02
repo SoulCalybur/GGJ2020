@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 200370f8b670edf479a560a3aa82699a, type: 3}
+  m_Name: Grandma 1
+  m_EditorClassIdentifier: 
+  charName: Oma Walfriede Engelgrund
+  introText: "Hallo lieber Doktor! Hach es freut mich dass ich endlich einen Termin
+    bekommen habe, aber ich habe schon soo viel von Ihnen geh\xF6rt! Selbst in zehn
+    Jahren wird man noch von Ihnen reden, h\xF6ren Sie! Oh, ich bin gespannt was
+    Sie mir empfehlen, meine Enkel hoffen alle, dass ich dann weniger rede, aber
+    das denke ich nicht, nicht wahr?"
+  stressLevel: 0.702
+  expressionSprites:
+  - {fileID: 21300000, guid: 075b658dcac780f4d9673d572ae23925, type: 3}
+  - {fileID: 21300000, guid: 3b676d0c9fa67d744bd7e5d83cb06211, type: 3}
+  - {fileID: 21300000, guid: d74983de7ff586249b649e7325a7d648, type: 3}
+  - {fileID: 21300000, guid: 8ee839cb65256cb408e0c5d03e15914b, type: 3}
+  - {fileID: 21300000, guid: 5d7eb6d8989ade2489cb2664d96800e4, type: 3}
+  stressAmount_O: -0.1
+  stressAmount_C: 0.3
+  stressAmount_E: 0.005
+  stressAmount_A: 0.005
+  stressAmount_N: 0.005
+  answers_category_O:
+  - "Ach nein, das ist so verg\xE4nglich, und was ist schon Zeit. Nur ein fliehender
+    Gedanke! Jung ist man im K\xF6pfchen, es gibt doch nichts gr\xF6\xDFeres, als
+    in die Geschichte zu reisen! Oder in die Zukunft! Haha! Wenn meine Enkel doch
+    nur auch dabei sein k\xF6nnten..."
+  - "Ha! Da sprechen Sie mir direkt aus dem Herzen! Ich liebe es, neue Dinge auszuprobieren!
+    Ich habe alles ausprobiert, hab damals nicht nur Baumstammwerfen mit den Schotten
+    gemacht - in meiner Jugend freilich, jaja - ich habe bei den ersten Fallschirmfl\xFCgen
+    mitgemacht, und das war so lustig ich bin nochmal zum ersten mal gesprungen!
+    Prost!  Ah! H\xF6ren Sie mir \xFCberhaupt noch zu? Ja? Ah, Sie sind ja genau
+    wie \u2026  "
+  answers_category_C:
+  - "Ach nein, Friedrich, der Gro\xDFe, meine ich, sagte immer, ich w\xFCrde meinen
+    Kopf vergessen wenn er nicht angeklebt w\xE4re. Haha, ich wei\xDF noch als ich
+    meine wei\xDFen Handschuhe bei ihm vergessen hatte, das war was! \xDCberall gingen
+    Ger\xFCchte um, er h\xE4tte eine Aff\xE4re!  Aber nein hei\xDFt nein, ich war
+    ja noch verheiratet!  "
+  - "Ach nein, wof\xFCr auch. Ich hab so viel mehr Freiheit. Ich wei\xDF, dass es
+    auch Leute gibt, die nicht ohne einen Plan aufs Klo gehen, aber ich geh\xF6re
+    auf keinen Fall zu denen! Ich gehe einfach, wenn es mir passt. H\xF6ren Sie,
+    dieses Lied wurde nach mir verfasst: \u201CMeine Oma f\xE4hrt im H\xFChnerstall
+    Motooorrad, Motoooorrad\u2026\u201D  "
+  answers_category_E:
+  - "Oh ja, ich habe jeden Sonntag Kaffeekr\xE4nzchen mit meinen Freundinnen, wir
+    essen immer meine selbstgebackenen Kuchen. Oh, glauben Sie mir, die lieben alle!
+    Sogar Marie Antoinette war ein gro\xDFer Fan davon, sie bat mich immer, welchen
+    mitzubringen.  "
+  - "Allein? \xDCberhaupt nicht, muss ich Ihnen sagen. Ich liebe die 80er, und gehe
+    gerne zur\xFCck dahin, um an Feiern teilzunehmen. Oh, und die B\xE4lle in Wien!
+    Immer wieder ein Erlebnis!  "
+  answers_category_A:
+  - "Aber nat\xFCrlich! Ich bin in der Pferdepolo Mannschaft von Miesbr\xFCck! Reiten
+    gelernt habe ich ja beim Hunnenk\xF6nig pers\xF6nlich, Attila. Der Mann war selbst
+    wilder als seine Pferde sag ich ihr, Zack! Da gings ab! (Gestikuliert wild mit
+    den Armen) Da konnte ich meine neue H\xFCfte mal richtig einweihen!   "
+  - "(senkt Stimme) Ah, ja! Viele\u2026 Dem Heer der Engl\xE4nder bin ich damals
+    nur knapp entkommen, indem ich durch den \xC4rmelkanal geschwommen bin. Und einmal
+    musste ich mich mit einem jungen Amerikaner aus einer Burg herausgraben, wir
+    sind nur knapp dem Tode entronnen.  "
+  answers_category_N:
+  - 'Letzte Woche war schrecklich! Ich musste zum Doktor, hatte eine Pfeilwunde,
+    aber der Mann hat mich direkt zu Ihnen weiter geschickt. Die Apachen, sag ich
+    Ihnen, wilder als man denkt. '
+  - "Aber nein! Ich teile lediglich anderen Leuten gerne meine Meinung mit, aber
+    ob sie die h\xF6ren wollen, hab ich mir noch nicht so viele Gedanken gemacht.
+    Aber manche Sachen sind wie sie sind! Die wei\xDF ich nun mal im Alter, mit 96
+    Jahren, die wissen andere nicht!  "
+  reactions_category_O:
+  - "Das habe ich tats\xE4chlich noch nie getan, aber vielleicht ist es wirklich
+    an der Zeit, mich meinen Enkeln endlich zu \xF6ffnen.      "
+  - "Ich habe tats\xE4chlich noch nie meine Enkel mit auf eine meiner Reisen genommen.
+    Aber vielleicht haben Sie Recht, vielleicht muss man es selbst erleben, um es
+    zu glauben.  "
+  - "Meinen Sie wirklich? Meine Enkel lieben mich jetzt noch, sie halten mich lediglich
+    f\xFCr verr\xFCckt. Ach, wenn sie die Wahrheit w\xFCssten.  "
+  - "Ich habe meine Entscheidung nun getroffen. Vielleicht ist es an der Zeit, meinen
+    Enkeln zu verraten, wann ihre Eltern sind. Ich hatte die ganze Zeit Angst davor,
+    es ihnen wirklich zu zeigen, und habe ihnen von meinen Reisen erz\xE4hlt, um
+    sie darauf vorzubereiten, doch bald schon werde ich mit ihnen zur\xFCck reisen,
+    in die Vikingerd\xF6rfer, wo Yrsilde und Bj\xF6rn leben.  "
+  reactions_category_C:
+  - "Was? Nein, ich bin schrecklich zum planen, und denke nicht, dass Zeit das Problem
+    ist! Meine Enkel halten mich mittlerweile doch f\xFCr total plemplem! Sie glauben
+    mir also auch nicht! Ich habe doch keine Halluzinationen! Sie sind wie all die
+    anderen!  "
+  - "Tagebuch? Das habe ich vor drei\xDFig Jahren schon einmal getan, aber dann habe
+    ich es bei den Russen vergessen, vielleicht ist es heute sogar in einem Museum,
+    wer wei\xDF?  "
+  - "Ah, wenn Sie meinen\u2026 Ich glaube ich w\xFCrde vor Langeweile eingehen, wie
+    man so sch\xF6n sagt. Jeden Tag ein neues Abenteuer sage ich.  "
+  - 'Gut. Dann habe ich mich entschieden. Ich werde mich nach Russland begeben, um
+    mein Tagebuch wiederzuerlangen, und dann vielleicht einem geregelten Ablauf nachzugehen.  '
+  reactions_category_E:
+  - "Hm, meiner Familie bringt das nicht wirklich n\xE4her. Ich bezweifle, dass es
+    noch weitere wie mich gibt, nicht jeder kann schlie\xDFlich von sich sagen, schon
+    einmal im trojanischen Pferd gesessen zu haben!   "
+  - "Nat\xFCrlich kann ich es noch einmal versuchen, so einer Institution beizutreten.
+    Aber in meiner Vergangenheit habe ich die Erfahrung gemacht, dass mir in derartigen
+    Einrichtungen auch nicht besonders viel Glauben geschenkt wird. Die Menschen
+    sind alle so altmodisch, es ist unglaublich!  "
+  - "Ich erz\xE4hle so gerne von meinen Erlebnissen. Besonders die Geschichte mit
+    Blackbeard und seiner Crew wird die Zuh\xF6rer ganz sicher fesseln, aber ich
+    bin mir nicht sicher, ob sie mir glauben werden. Schade, wirklich.  "
+  - "Oh ja, ich hatte schon l\xE4nger vor, mir einen Account bei so etwas zu machen.
+    Aber wissen Sie, ich war ja in der Zukunft, und habe mir angeschaut, wie sich
+    das entwickelt, und in 50 Jahren ist dieser Hype vorbei, da sind die Think-reader
+    in, so Gedankenlese-Ger\xE4te. Ich hab eins mitgebracht, es aber irgendwo verloren\u2026  "
+  reactions_category_A:
+  - "Ich bin zwar davor immer davor zur\xFCckgeschreckt, die Zukunft meiner Nachfahren
+    so direkt zu beeinflussen, aber wenn Sie meinen, dass sie mir dann zuh\xF6ren,
+    werde ich es mal versuchen.  "
+  - 'Sie meinen so etwas wie einen Zeitreise-Wettbewerb? Meinen Sie denn, da macht
+    jemand mit? Ich glaube nicht, dass es noch andere wie mich gibt.  '
+  - "Bah, ich wurde zwar einige Male verletzt, es war aber nie was ernstes. Lediglich
+    einige kleinere Fleischwunden. Hah, ich wei\xDF noch wie ich damals in Singapur
+    drei Wochen im 18. Jahrhundert bleiben musste, weil ich solchen Durchfall hatte.  "
+  - "Sicherlich, sicherlich. Das ist meine Grunddevise, selbst wenn ich mit P\xE4psten
+    konversiere. Einmal als ich dort auf Audienz war, hatte ich sogar einen faltbaren
+    roten Teppich dabei, und siehe da, er hat mir Gleiches mit Gleichem vergolten.  "
+  reactions_category_N:
+  - "Ich erz\xE4hle meinen Enkeln alles, aber vielleicht reicht das noch nicht. Was
+    k\xF6nnte ich noch tun?  "
+  - "Gut! Ich war mir nicht sicher, ob mir dann jemand glaubt, aber jetzt haben Sie
+    mich best\xE4rkt. Ich werde weiter reisen, vielleicht treffe ich sogar mal diesen
+    legend\xE4ren Doktor in seiner Telefonzelle.  "
+  - "Sie meinen, ich soll irgendwie meine Pers\xF6nlichkeit \xE4ndern? Hah, das haben
+    schon viele versucht! Oje, das weckt schlechte Erinnerungen, von diesem indischen
+    Hypnotiseur..  "
+  - "Ach so, hm. Ich hatte mal einen Hund, falls Sie so was meinen, aber ich habe
+    ihn in China im 17. Jahrhundert vergessen, als ich zur\xFCckkam, war er nicht
+    mehr da. Es war schrecklich, damals habe ich wochenlang nicht richtig essen k\xF6nnen.  "

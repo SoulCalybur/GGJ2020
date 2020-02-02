@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 200370f8b670edf479a560a3aa82699a, type: 3}
+  m_Name: Brian das Llama
+  m_EditorClassIdentifier: 
+  charName: Brian das "Alpaka"
+  introText: "Hach ich hab soviele Probleme. Meine Wolle sitzt nicht richtig, meine
+    Frisur ist viel zu flach, ich muss mindestens 40 Pfund abnehmen und jetzt schickt
+    mich der Bauer auch noch zu ihnen. Nichts f\xFCr ungut, sie sind liebreizend,
+    aber eigentlich h\xE4tte ich jetzt einen Spa Termin."
+  stressLevel: 0.702
+  expressionSprites:
+  - {fileID: 21300000, guid: 075b658dcac780f4d9673d572ae23925, type: 3}
+  - {fileID: 21300000, guid: 3b676d0c9fa67d744bd7e5d83cb06211, type: 3}
+  - {fileID: 21300000, guid: d74983de7ff586249b649e7325a7d648, type: 3}
+  - {fileID: 21300000, guid: 8ee839cb65256cb408e0c5d03e15914b, type: 3}
+  - {fileID: 21300000, guid: 5d7eb6d8989ade2489cb2664d96800e4, type: 3}
+  stressAmount_O: 0.005
+  stressAmount_C: 0.3
+  stressAmount_E: -0.1
+  stressAmount_A: 0.005
+  stressAmount_N: 0.005
+  answers_category_O:
+  - "Traditionen? Darling, ich bin ein Alpaka. Unsere Traditionen ist das zielgerechte
+    Spucken und ausgezeichnete Fellpflege. Und selbstverst\xE4ndlich das Fest der
+    erwachten alten G\xF6tter, aber dar\xFCber reden man ja nicht in Gesellschaft."
+  - "Oh ja, aber das ist ja verst\xE4ndlich. Ich finde einfach kein gutes Shampoo
+    dass das Volumen meiner Wolle so richtig herausholt. Man muss ja so vorsichtig
+    sein bei den Kuren, manche davon verstehen sich gar nicht miteinander, da muss
+    man schon aufpassen!"
+  answers_category_C:
+  - "Oh so gar nicht, Liebling. Mein Reich ist wie mein Geist, nur ich wei\xDF wo
+    etwas ist. Wobei ich letzte Woche dreimal neues Haar\xF6l kaufen musste da ich
+    das Alte verlegt hatte. Ach, was tut man nicht alles f\xFCr die Leute, die einst
+    meine Wolle verwenden wollen."
+  - "Aber sicher doch, sicher! Allein \xFCber die n\xE4chste Woche habe ich einen
+    Termin bei meinem Fris\xF6r, drei f\xFCr Milchb\xE4der, ausgezeichnet f\xFCr
+    die Haare, und noch zwei Termine f\xFCr Fu\xDFpflege. Wussten sie dass Alpakas
+    keine Hufe haben? Das war peinlich beim letzten mal."
+  answers_category_E:
+  - Jedes Alpaka freut sich sich doch wenn es in der Herde unterwegs sein kann. Momentan
+    kann ich leider noch nicht bei ihnen sein, ich habe meine eigene Weide. Aber
+    sobald meine Frisur sitzt und ich einen halben Zentner abgenommen habe kann ich
+    mich ja endlich unter Leute trauen.
+  - "Oh, viele denken das bestimmt, aber es stimmt nat\xFCrlich nicht. Leider fragt
+    keiner ob ich bei ihren Aktivit\xE4ten mitmachen m\xF6chte, aber wenn mein Flies
+    erst reinwei\xDF ist werden sie schon bemerken das sie was verpassen! Dann landet
+    die Einladung schneller in meinem Briefkasten als ich lesen lernen kann, oh ja!"
+  answers_category_A:
+  - "Ich bin sozusagen ein Aussenseiter, ein einsames Alpaka auf der einsamen Weide.
+    Aber keine Wunder, bei dem Shampoo. Ich h\xE4tte es mir Wert sein sollen bei
+    L\u2019Oreal zu bleiben. K\xF6nnen sie glauben das meine fehlerhafte K\xF6rperpflege
+    dazu gef\xFChrt hat das ich schon seit Jahren nicht geschoren wurde? Peinlich,
+    sage, ich, peinlich."
+  - "Oh nein, ich bin sicher dass mir niemand absichtlich etwas b\xF6ses will. Sicher,
+    sie stellen mich auf eine getrennte Weide, und ich bin auch bei den Ausfl\xFCgen
+    nicht dabei, aber ich will mich ja niemanden aufdr\xE4ngen. Kommt mir gerade
+    recht, dann kann ich daran arbeiten mein Fell zu pflegen und an meiner Ohrhaltung
+    zu arbeiten."
+  answers_category_N:
+  - "Oh, nat\xFCrlich ging es mir blendend.  Ich meine, ich war viel allein. Ganz
+    allein. Die anderen aus der Entfernung betrachtend. Einsam auf der Weide. An
+    trockenem Gras kauend, in Hoffnung auf bessere Zeiten. Wer braucht die schon.
+    Was soll schon so toll daran sein dazuzugeh\xF6ren. Was ist denn schon wenn ich
+    nicht ihre Erwartungen erf\xFClle und keine Freunde verdiene. Was war die Frage
+    nochmal?"
+  - "Streiten ist eine t\xEAte-a-t\xEAte Angelegenheit, mein Schatz. Ich w\xFCrde
+    doch nicht mit der Absicht jemanden zu verletzen auf sie zugehen. Sie m\xFCssen
+    schon zu mir kommen wenn sie meine Meinung sch\xE4tzen wollen. Nicht dass sie
+    das tun w\xFCrden. Nicht das irgendjemand zu mir kommen w\xFCrde. Aber mit dieser
+    Fellfarbe, wer nimmt es ihnen \xFCbel. "
+  reactions_category_O:
+  - "Sie haben recht, ich tue noch nicht genug. Ich muss sofort dem Elektronik-Club
+    beitreten, hoffentlich haben sie noch freie Pl\xE4tze, und wenn ich Schlaf auf
+    2 Stunden pro Nacht runterk\xFCrze und w\xE4hrend des Schulwegs esse kann ich
+    n\xE4chstes Halbjahr dem Roboter-Club beitreten\u2026"
+  - "Vermutlich sollte ich noch dem Astronomie-Club beitreten, dann k\xF6nnte ich
+    ein Fr\xFChwarnsystem f\xFCr die Stadt installieren f\xFCr den Fall, dass es
+    einen Angriff aus dem Weltall gibt! Ich meine, Meteoriten und so. Aber dann muss
+    ich sofort los und den Judo-Club streichen\u2026 "
+  - "Gute Idee! ich kenne bis jetzt nur 9 Sprachen, ich sollte vermutlich noch ein
+    paar mehr lernen, nur f\xFCr den Fall dass ich eine weitere Formation uralter
+    Runenschrift finde, dann kann ich besser vorbereitet sein. Meine Eltern sehen
+    mich sowieso viel zu viel, wenn ich noch 2 Stunden mehr in der Bibliothek verbringe\u2026 "
+  - 
+  reactions_category_C:
+  - 'Das ist mein Problem? Ich plane noch nicht gut genug? Denken sie das ich nicht
+    die Beste im planen bin? Dann werde ich noch besser planen, bestimmt gibt es
+    noch vergeudete Minuten, die ich sinnvoll nutzen kann. '
+  - 
+  - 
+  - 
+  reactions_category_E:
+  - "Ich kann nicht noch mehr Zeit daf\xFCr ausgeben. Viel zu viele Leute sind von
+    meinen Aktionen abh\xE4ngig, ich hab wirklich genug damit zu tun."
+  - 
+  - 
+  - 
+  reactions_category_A:
+  - "Was?! Aber\u2026 Ich mache doch praktisch nichts anderes! Jeden Tag gehe ich
+    auf Menschen zu und erreiche ihre Herzen. Mache ich da einen Fehler?"
+  - "Aber mit McKaths Missions, und meiner Verantwortung, wie soll ich das denn machen?
+    Es gibt soviel zu tun, soviele Erwartungen die die Menschen an mich haben, und
+    wenn ich sie nicht erf\xFClle\u2026"
+  - "Vielleicht haben sie recht, aber es ist wirklich wichtig. Meine Zukunft, die
+    Zukunft unserer Stadt, jemand muss sich darum k\xFCmmern. Denken sie das meine
+    Herangehensweise falsch war?"
+  - "... ... Ich vermisse meine Freunde. Das letzte mal habe ich mit Vera und Annika
+    geredet als die Sache mit dem Schwei\xDF-D\xE4monen war. Ich dachte ich besch\xFCtze
+    sie wenn ich sie nicht involviere. Aber ich m\xF6chte ehrlich mit ihnen seien,
+    und Sie verdienen auch meine Ehrlichkeit. McKath ist ein Alien aus der Zukunft,
+    das in die Vergangenheit der Erde gereist ist um zu verhindern das die B\xF6se
+    Mondk\xF6nigin Vill\u2019Elaine die Macht an sich rei\xDFt. Sie hat die finstere
+    F\xE4higkeit die negativen Emotionen in den Herzen der Menschen zu manifestieren,
+    und zwar als b\xF6sartige\u2026. Lehrer, haupts\xE4chlich. Der Schwei\xDF-D\xE4mon
+    war unser Sportlehrer. Aber auch als Vorgesetzte, Vorarbeiter und Manager in
+    der Service Industrie. Seien sie ehrlich, w\xFCrden sie glauben das jemand mit
+    gutem Gewissen jemandem Hausaufgaben \xFCber die Sommerferien aufgeben w\xFCrde?
+    Eine 60-j\xE4hrige Angestellte feuern weil sie eine So\xDFe zuviel rausgegeben
+    hat? Absichtlich andere Menschen gef\xE4hrden indem sie sie dazu zwingt krank
+    zur Arbeit zu kommen oder gefeuert zu werden? Aber das spielt jetzt keine Rolle.
+    Sie haben mir die Augen ge\xF6ffnet. Ich k\xE4mpfe f\xFCr Liebe und Freundschaft,
+    aber ohne Freunde kann ich nicht gewinnen. Ich werde sie um mich scharen und
+    gemeinsam werden wir diesem \xDCbel ein f\xFCr allemal ein Ende bereiten! "
+  reactions_category_N:
+  - "Ich habe McKath und kein Problem mit mir. Nur weil sie mich nicht verstehen
+    hei\xDFt das nicht das ich auf der falschen Seite stehe."
+  - 
+  - 
+  - 

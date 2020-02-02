@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 200370f8b670edf479a560a3aa82699a, type: 3}
+  m_Name: Vlademar
+  m_EditorClassIdentifier: 
+  charName: 'Vampir, Vlademar, 672 Jahre '
+  introText: "\u201CAch, ich wei\xDF einfach nicht mehr was ich machen soll, die
+    Leute respektieren einen Nosferatu einfach nicht mehr. Ich kann mich selbst nicht
+    einmal mehr im Spiegel ansehen. Letzte Woche hat jemand versucht, meiner Fledermausgestalt
+    eine Erdnuss zu f\xFCttern.\u201D "
+  stressLevel: 0.702
+  expressionSprites:
+  - {fileID: 21300000, guid: 075b658dcac780f4d9673d572ae23925, type: 3}
+  - {fileID: 21300000, guid: 3b676d0c9fa67d744bd7e5d83cb06211, type: 3}
+  - {fileID: 21300000, guid: d74983de7ff586249b649e7325a7d648, type: 3}
+  - {fileID: 21300000, guid: 8ee839cb65256cb408e0c5d03e15914b, type: 3}
+  - {fileID: 21300000, guid: 5d7eb6d8989ade2489cb2664d96800e4, type: 3}
+  stressAmount_O: 0.3
+  stressAmount_C: 0.005
+  stressAmount_E: 0.005
+  stressAmount_A: 0.005
+  stressAmount_N: -0.1
+  answers_category_O:
+  - "Nat\xFCrlich sind Traditionen wichtig, aber heute legt keiner mehr Wert auf
+    die richtigen Gepflogenheiten. Niemand h\xE4ngt mehr Knoblauch \xFCber die T\xFCr,
+    und die T\xFCrmatten laden ja praktisch von selbst ein. Soll ich mich vor einem
+    dieser New Age Kristallen einsch\xFCchtern lassen? Es ist eine Beleidigung."
+  - Ich habe es versucht.  Internet stalking anstelle in den Schatten zu lauern und
+    so weiter. Aber es ist einfach nicht dasselbe, besonders mit diesen verdammten
+    Mobiltelefonen. Ich habe letzte Woche versucht mit einem guten Gewitter und Nebel
+    einen verirrten Fahrer in meine Villa zu locken, und er hat sich einfach ein
+    Uber bestellt.
+  answers_category_C:
+  - "...Sitzt mein Kragen nicht richtig? Ihrer scheint etwas zu eng geschn\xFCrt
+    zu sein wenn sie so eine Frage stellen m\xFCssen. Selbstverst\xE4ndlich k\xFCmmert
+    Igor sich zuhause um alles. "
+  - "Ach, eigentlich geht das alles recht einfach von der Hand. Ein gutes Gewitter
+    f\xFCr die Stimmung, ein offenes Fenster in einer warmen Sommernacht, eine Jungfrau
+    in leichtem Nachthemd\u2026 Bah, jetzt habe ich mir den Appetit verdorben. "
+  answers_category_E:
+  - "Oh, ich habe durchaus gerne G\xE4ste. Momentan sind meine R\xE4umlichkeiten
+    leider beschr\xE4nkt, und meine letzte Braut der Nacht hat sich auch von mir
+    getrennt. Eine neue Braut in der heutigen Gesellschaft zu finden erscheint unm\xF6glich."
+  - "Ein wahrer Nosferatu ist niemals allein, denn unser Hofstaat ist stets bei uns!
+    Nun, mein Hofstaat beschr\xE4nkt sich momentan auf meinen Diener, Igor, bedauerlicherweise."
+  answers_category_A:
+  - "Die Bruderschaft der Nacht verband einst alle Kreaturen der Finsternis in einem
+    unheiligen Konglomerat. Aber das war noch als ich das Schloss hatte, uns bei
+    dem Werwolf zu treffen war keine Option. Jahrhunderte lang habe ich J\xE4ger,
+    die Sonne und den Teufel pers\xF6nlich abgewehrt, aber die Steuereintreiber hatten
+    mehr Bosheit und Wut in sich als diese all zusammen."
+  - "Mit Freuden w\xFCrde ich ihnen diese Frage mit einem glorreichen *Ja* beantworten,
+    aber ebenso wie diese Zeiten unseren Rang vergessen hat, so haben auch die Vampirj\xE4ger
+    ihren Biss verloren. Erst letzte Woche dachte ich, dass eine pl\xF6tzliche Attacke
+    mit Weihwasser mich erwischt h\xE4tte, nur um festzustellen dass ich lediglich
+    die Sprinkleranlage vergessen hatte."
+  answers_category_N:
+  - "Meine Gef\xFChle! Mein Seele! Meine Tragik! Oh weh sei mir denn mein kaltes
+    Herz schmerzt es, durchbohrt nicht von Holz, sondern Abscheu!... Ich meine, es
+    war ein wenig still. Bin nicht viel ausgeflogen. Hunger plagt mich, aber diese
+    Zeit ist nicht bereit f\xFCr meine Art."
+  - "Konflikt ist das Leben, Kommunikation aus voller Seele, ausgerufen in die Nacht,
+    in der unwissenden Hoffnung, das Herz und den Geist der Ersonnen zu erreichen
+    und tiefer einzudringen als jeder Pflock es je vermag. Doch tr\xE4nken meine
+    Z\xE4hne sich nicht an dem Leben einer ungewissen, nicht erf\xFCllt mein K\xF6rper
+    das Gef\xFChl des Verlangens, denn ich weigere mich\u2026. Und Igor streitet
+    nicht. Das ist nicht seine Natur."
+  reactions_category_O:
+  - Hmpf, vielleicht sollte ich neue Dinge versuchen. Es gibt da einige Einrichtungen
+    die zu meinen Wachstunden offen haben und Leute hereinlassen. Was kann es schaden.
+  - 
+  - 
+  - 
+  reactions_category_C:
+  - "Das ist ja wohl das D\xFCmmste das ich seit Jahrzehnten geh\xF6rt habe. Wenn
+    dieses Problem durch Zeit gel\xF6st werden k\xF6nnte h\xE4tte ich mir auch sparen
+    k\xF6nnen hierher zu kommen."
+  - 
+  - 
+  - 
+  reactions_category_E:
+  - "Hat schon jemand alles Blut aus ihrem Kopf gesaugt? Es gibt im Umkreis von hunderten
+    Meilen keinen anderen Nosferatu, darauf habe ich wert gelegt! Und auch hunderte
+    von Meilen von meinem Steuereintreiber, der gr\xF6\xDFte Blutsauger von uns allen\u2026"
+  - 
+  - 
+  - 
+  reactions_category_A:
+  - "Ich gehe *immer* auf Menschen ein. Ich bin niemand der bei\xDFt und vergisst.
+    Jede Herausforderung und jeder Tropfen Blut soll verdient sein! Meine G\xFCte,
+    f\xFCr was f\xFCr eine Kreatur halten sie mich, einen Werwolf?"
+  - 
+  - 
+  - 
+  reactions_category_N:
+  - "Wenn es nur so einfach w\xE4re. Die Menschen von heute haben doch kein interesse
+    daran. Wenn doch nur\u2026"
+  - "Ich gebe mir doch m\xFChe, aber es funktioniert leider nunmal nicht. Meine schwarze
+    Seele verbleibt so finster wie die Nacht\u2026"
+  - "Aber\u2026 die Tradition. Die Erwartungen. Die Jagd und der J\xE4ger. Sollten
+    diese Dinge nicht gewahrt werden?"
+  - "... ... ...Sie haben vermutlich Recht. Es war eine wahrlich grausige Erfahrung
+    die mich zu ihnen brachte, so vermag ich nun dar\xFCber zu sprechen. Vor drei
+    Wochen, nachdem mich meine Braut der Nacht verlie\xDF, so flog ich aus um eine
+    neue Braut zu suchen. Aber es war  sinnlos. Moskitonetze vor den Fenstern. Gut
+    ausgeleuchtete Stra\xDFen ohne ordentliche finstere Gassen. Schlussendlich fand
+    ich doch eine einsame Jungfer die die Stra\xDFen wanderte. Ich erschien vor ihr,
+    und bat um ihre Hand\u2026 Und sie stie\xDF einen schrillen Schrei aus. Doch
+    nicht Furcht oder Verlangen, es war\u2026 Irgendetwas \xFCber Diamanten, glitzern
+    im Sonnenlicht und einen Typ Namens Eduard oder so. Und das ging so weiter. Sie
+    tippte etwas auf ihrem Mobiltelefon und innerhalb von weniger als 10 Minuten
+    war ich umzingelt von kreischenden Teenagern. Ich entkam knapp mit meinem Leben
+    w\xE4hrend sie meine Roben zerrissen und aktiv versuchten ihre H\xE4lse in meinen
+    Mund zu dr\xFCcken. Ich habe mich noch nie so missbraucht gef\xFChlt, ihre H\xE4nde
+    waren \xFCberall\u2026 Aber Ich soll mich nicht weiter beirren lassen. Eine schlechte
+    Erfahrung sollte mir nicht den Mut an meiner Existenz nehmen, das sehe ich jetzt.
+    Vielleicht sollte ich den Jungfern abschw\xF6ren und versuchen meine Braut zur\xFCckzugewinnen.
+    Ich danke ihnen, und es tut mir fast leid dass ich vor hatte ihr Blut zu trinken.
+    Ich werde Igor veranlassen ihnen einen Geschenkkorb zukommen zu lassen. "

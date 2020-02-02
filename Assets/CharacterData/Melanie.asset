@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 200370f8b670edf479a560a3aa82699a, type: 3}
+  m_Name: Melanie
+  m_EditorClassIdentifier: 
+  charName: 'Melanie, Alter 13, vielleicht magisch? '
+  introText: "Scheinbar denkt meine Schule das ich ein Problem habe. Ich habe mehr
+    als genug  zu tun, wirklich, aber meine Eltern haben Gwynevere McKath gefunden
+    und haben versprochen das ich sie behalten darf wenn ich das hier mache. Ich
+    w\xFCrde lieber zuhause im Bett liegen oder den Stundenplan f\xFCr morgen durchgehen.
+    Es gibt noch soviel zu tun. "
+  stressLevel: 0.702
+  expressionSprites:
+  - {fileID: 21300000, guid: 075b658dcac780f4d9673d572ae23925, type: 3}
+  - {fileID: 21300000, guid: 3b676d0c9fa67d744bd7e5d83cb06211, type: 3}
+  - {fileID: 21300000, guid: d74983de7ff586249b649e7325a7d648, type: 3}
+  - {fileID: 21300000, guid: 8ee839cb65256cb408e0c5d03e15914b, type: 3}
+  - {fileID: 21300000, guid: 5d7eb6d8989ade2489cb2664d96800e4, type: 3}
+  stressAmount_O: 0.005
+  stressAmount_C: 0.3
+  stressAmount_E: 0.005
+  stressAmount_A: -0.1
+  stressAmount_N: 0.005
+  answers_category_O:
+  - "Sie meinen Weihnachten und so? Ich liebe Feiertage, aber sie sind leider sehr
+    stressig. Je mehr positive Gef\xFChle in der Luft sind desto mehr muss ich arbeiten.
+    Versuchen sie mal da noch einen 1,0er Schnitt zu halten."
+  - "Ich finde gerne neue Dinge raus. Aber leider funktioniert es oft nicht, und
+    die Probleme immer gleich zu l\xF6sen wird schnell langweilig. Aber immerhin
+    tauchen sie ja auch nur einmal pro Woche auf, und ich muss niemanden unterhalten. "
+  answers_category_C:
+  - "Ist die Frage ernst gemeint? Glauben sie denn ich k\xF6nnte alle Hausaufgaben,
+    Schachtraining, Unterricht, das Weltretten, meine Schulsprecherpflichten, die
+    bevorstehende Fl\xF6tenspiellandesmeisterschaft und den geplanten Kuchenverkauf
+    ohne Organisation hinbekommen?! Nichts darf aus dem Lot geraten."
+  - "Die Antwort auf diese Frage ist *Ja*. Das habe ich von meinen Karteikarten,
+    die ich aufgeschrieben habe um dieses langweile Gespr\xE4ch zu planen."
+  answers_category_E:
+  - "Sicher, ich bin gerne in meinem Schachclub. Die anderen sind zwar keine gro\xDFen
+    Gegner, aber das Spielen ist wenigstens unterhaltsam. Aber ich kann es nicht
+    ab wenn sie versuchen mir ihre Meinung aufzudr\xE4ngen, ich wei\xDF immer wie
+    ich gewinnen kann, bis jetzt habe ich noch alle Herzen zur\xFCckgeholt."
+  - "Ich will ehrlich sein, so richtig alleine bin ich nie. McKath ist fast immer
+    in der Gegend, aber sie redet auch nicht viel. Sie hat mich gew\xE4hlt und deswegen
+    muss ich weitermachen. Jemand anderes k\xF6nnte einen Fehler machen. Der Benutzer
+    ist die Hauptursache f\xFCr Fehler in jedem organisierten System"
+  answers_category_A:
+  - "Ich\u2026 Also, ja, also nein, es ist kompliziert. McKath k\xF6nnte es besser
+    erkl\xE4ren. Ich muss es alleine schaffen, nur wenn ich die Beste bin kann ich
+    die Herzen retten, verstehen sie? Und ein Fehler in der Strategie k\xF6nnte alles
+    ruinieren, und Probleme f\xFCr alle verursachen. Deswegen ist es besser die Beste
+    zu sein, egal was es kostet."
+  - "Nun, es gibt da diese b\xF6se\u2026 Ballk\xF6nigin, ja Ballk\xF6nigin, die hat
+    es auf die Herzen, also die Emotionen von den Leuten dieser Stadt abgesehen,
+    und ich w\xFCrde behaupten das ich ihre gr\xF6\xDFte Widersacherin bin. Es ist
+    nicht ungef\xE4hrlich, K\xF6nigin Vill\u2019elaine hat es auf den st\xE4rksten
+    Verteidiger abgesehen, deswegen muss ich ihr immer einen Schritt voraus sein
+    und die anderen verteidigen!"
+  answers_category_N:
+  - "Letzte Woche war echt stressig. Drei Projekte, das Vorbereiten des Kuchenverkaufs,
+    3 Angriffe und ich habe Flyer f\xFCr alle Events des n\xE4chsten Halbjahres f\xFCr
+    die H\xE4lfte der Clubs unserer Schule designt, gedruckt und aufgeh\xE4ngt. Der
+    Schulrat hat zwar Hilfe angeboten, aber sie haben weder Ahnung von grafischen
+    Design noch von der korrekten Menge Kleister zum anbringen. Und normalerweise
+    sind es auch nur 2 Angriffe pro Woche, max."
+  - "Nein, nicht in dem Sinne. Diskussionen sind interessant, aber ich habe keine
+    Zeit mehr um mich entsprechend vorzubereiten, da ist es besser eine klare Meinung
+    zu haben. Streiten tut man ja nur wenn die andere Seite glaubt gewinnen zu k\xF6nnen.
+    Aber wenn man sich von den M\xE4chten der Herzlosen verteidigt darf man nicht
+    wanken."
+  reactions_category_O:
+  - "Sie haben recht, ich tue noch nicht genug. Ich muss sofort dem Elektronik-Club
+    beitreten, hoffentlich haben sie noch freie Pl\xE4tze, und wenn ich Schlaf auf
+    2 Stunden pro Nacht runterk\xFCrze und w\xE4hrend des Schulwegs esse kann ich
+    n\xE4chstes Halbjahr dem Roboter-Club beitreten\u2026"
+  - "Vermutlich sollte ich noch dem Astronomie-Club beitreten, dann k\xF6nnte ich
+    ein Fr\xFChwarnsystem f\xFCr die Stadt installieren f\xFCr den Fall, dass es
+    einen Angriff aus dem Weltall gibt! Ich meine, Meteoriten und so. Aber dann muss
+    ich sofort los und den Judo-Club streichen\u2026 "
+  - "Gute Idee! ich kenne bis jetzt nur 9 Sprachen, ich sollte vermutlich noch ein
+    paar mehr lernen, nur f\xFCr den Fall dass ich eine weitere Formation uralter
+    Runenschrift finde, dann kann ich besser vorbereitet sein. Meine Eltern sehen
+    mich sowieso viel zu viel, wenn ich noch 2 Stunden mehr in der Bibliothek verbringe\u2026 "
+  - 
+  reactions_category_C:
+  - 'Das ist mein Problem? Ich plane noch nicht gut genug? Denken sie das ich nicht
+    die Beste im planen bin? Dann werde ich noch besser planen, bestimmt gibt es
+    noch vergeudete Minuten, die ich sinnvoll nutzen kann. '
+  - 
+  - 
+  - 
+  reactions_category_E:
+  - "Ich kann nicht noch mehr Zeit daf\xFCr ausgeben. Viel zu viele Leute sind von
+    meinen Aktionen abh\xE4ngig, ich hab wirklich genug damit zu tun."
+  - 
+  - 
+  - 
+  reactions_category_A:
+  - "Was?! Aber\u2026 Ich mache doch praktisch nichts anderes! Jeden Tag gehe ich
+    auf Menschen zu und erreiche ihre Herzen. Mache ich da einen Fehler?"
+  - "Aber mit McKaths Missions, und meiner Verantwortung, wie soll ich das denn machen?
+    Es gibt soviel zu tun, soviele Erwartungen die die Menschen an mich haben, und
+    wenn ich sie nicht erf\xFClle\u2026"
+  - "Vielleicht haben sie recht, aber es ist wirklich wichtig. Meine Zukunft, die
+    Zukunft unserer Stadt, jemand muss sich darum k\xFCmmern. Denken sie das meine
+    Herangehensweise falsch war?"
+  - "... ... Ich vermisse meine Freunde. Das letzte mal habe ich mit Vera und Annika
+    geredet als die Sache mit dem Schwei\xDF-D\xE4monen war. Ich dachte ich besch\xFCtze
+    sie wenn ich sie nicht involviere. Aber ich m\xF6chte ehrlich mit ihnen seien,
+    und Sie verdienen auch meine Ehrlichkeit. McKath ist ein Alien aus der Zukunft,
+    das in die Vergangenheit der Erde gereist ist um zu verhindern das die B\xF6se
+    Mondk\xF6nigin Vill\u2019Elaine die Macht an sich rei\xDFt. Sie hat die finstere
+    F\xE4higkeit die negativen Emotionen in den Herzen der Menschen zu manifestieren,
+    und zwar als b\xF6sartige\u2026. Lehrer, haupts\xE4chlich. Der Schwei\xDF-D\xE4mon
+    war unser Sportlehrer. Aber auch als Vorgesetzte, Vorarbeiter und Manager in
+    der Service Industrie. Seien sie ehrlich, w\xFCrden sie glauben das jemand mit
+    gutem Gewissen jemandem Hausaufgaben \xFCber die Sommerferien aufgeben w\xFCrde?
+    Eine 60-j\xE4hrige Angestellte feuern weil sie eine So\xDFe zuviel rausgegeben
+    hat? Absichtlich andere Menschen gef\xE4hrden indem sie sie dazu zwingt krank
+    zur Arbeit zu kommen oder gefeuert zu werden? Aber das spielt jetzt keine Rolle.
+    Sie haben mir die Augen ge\xF6ffnet. Ich k\xE4mpfe f\xFCr Liebe und Freundschaft,
+    aber ohne Freunde kann ich nicht gewinnen. Ich werde sie um mich scharen und
+    gemeinsam werden wir diesem \xDCbel ein f\xFCr allemal ein Ende bereiten! "
+  reactions_category_N:
+  - "Ich habe McKath und kein Problem mit mir. Nur weil sie mich nicht verstehen
+    hei\xDFt das nicht das ich auf der falschen Seite stehe."
+  - 
+  - 
+  - 

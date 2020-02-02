@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 200370f8b670edf479a560a3aa82699a, type: 3}
+  m_Name: Dinosaurier Olaf
+  m_EditorClassIdentifier: 
+  charName: Dinosaurier Olaf
+  introText: "Hach. (Seufz) Ich\u2026 ich bin so traurig\u2026 Hach. (Seufz) Ich\u2026
+    ich bin so traurig\u2026 (seufz). Ich f\xFChle mich hier einfach nicht wohl. 
+    (seufz). Ich f\xFChle mich hier einfach nicht wohl.  "
+  stressLevel: 0.702
+  expressionSprites:
+  - {fileID: 21300000, guid: 075b658dcac780f4d9673d572ae23925, type: 3}
+  - {fileID: 21300000, guid: 3b676d0c9fa67d744bd7e5d83cb06211, type: 3}
+  - {fileID: 21300000, guid: d74983de7ff586249b649e7325a7d648, type: 3}
+  - {fileID: 21300000, guid: 8ee839cb65256cb408e0c5d03e15914b, type: 3}
+  - {fileID: 21300000, guid: 5d7eb6d8989ade2489cb2664d96800e4, type: 3}
+  stressAmount_O: 0.005
+  stressAmount_C: 0.005
+  stressAmount_E: 0.3
+  stressAmount_A: 0.005
+  stressAmount_N: -0.1
+  answers_category_O:
+  - "Ich habe keine Traditionen mehr, und das macht mich wirklich traurig. Ich bin
+    einfach untr\xF6stlich, aber nicht nur deswegen, sondern auch, weil mich keiner
+    hier mag.  "
+  - 'Nein. Ich habe damit sehr schlechte Erfahrungen gemacht. Immer wenn ich so etwas
+    versuche werde ich rausgeworfen, und beschimpft, und geschlagen, es ist einfach
+    schrecklich.  '
+  answers_category_C:
+  - "Ist das wichtig? Ich denke, ich bin ordentlich, auch wenn ich h\xE4ufig Dinge
+    kaputt mache. Daf\xFCr bin ich sehr unbeliebt. \xDCberall.  "
+  - "Ich plane ab und zu meine Einkaufsbesuche. Ich denke mir S\xE4tze aus wie \u201CGuten
+    Morgen, ich bin Olaf, ich suche ein T-shirt ohne Arme.\u201D Aber letztes Mal
+    bin ich nur bis \u201CGuten\u201D gekommen. Dann hat mich die Verk\xE4uferin
+    abgewiesen und gemeint, hier w\xFCrde ich nichts finden. Ich war todtraurig.
+    Es blieb mir nichts anderes \xFCbrig, als mit diesem Bettlaken vorlieb zu nehmen.  "
+  answers_category_E:
+  - "Hach. Fr\xFCher, da war ich unter allem. Eingeschlossen im Eis. Ich habe nichts
+    gesp\xFCrt, und gef\xFChlt. Die Qualen nun, die Schmerzen jetzt, mein Herz, das
+    leidet, wenn es zur\xFCckdenkt an diese Zeit, und die Vorzeit, die nun vergangen
+    ist.  "
+  - "Allein, was verstehen Sie schon von Einsamkeit, dieser schrecklichen Leere im
+    Herzen, die mich ergreift, wenn ich mich erinnere, an ein Leben vor dem Eis.
+    Nein, heute versteht mich keiner mehr, die Leute bezeichnen mich als gro\xDF,
+    und als ungeschickt, sie verstehen nicht, dass wahre Gr\xF6\xDFe von Innen kommt.  "
+  answers_category_A:
+  - "Das bin ich nicht. stellen Sie sich vor, ich im Fu\xDFball. Die Leute w\xFCrden
+    mich sicher wieder beschimpfen, und wenn es nur w\xE4re, weil ich vier Beine
+    habe.  "
+  - 'Ja, ich glaube wirklich diese Welt hat sich gegen mich verschworen. Es ist egal,
+    was ich tu, immer bin ich Schuld.  '
+  answers_category_N:
+  - "Letzte Woche war wie immer - jeder Millimeter meines K\xF6rpers war gef\xFCllt
+    mit einer Verzweiflung, die wie immer Ausgang suchte. Es geschah in einem Augenblick,
+    dass ich einkaufen ging, um neue Kleidung zu kaufen, und stellen Sie sich meine
+    Leid vor, als ich als \u201Cfett\u201D bezeichnet wurde. Kummer reicht nicht,
+    um es zu beschreiben, nein, ich habe sofort den Laden verlassen, und mich an
+    einen stillen Ort begeben. Kirche, nennt man diese gro\xDFen Geb\xE4ude.  "
+  - "Ooooooooh das Leiden! Ooooooh wenn ich an diese Menschen denke. Meine Nachbarn
+    hassen mich, ich werde als h\xE4sslich und dumm bezeichnet, stellen Sie sich
+    vor, \u201CSpatzenhirn\u201D haben sie mich genannt, als ob ich irgendetwas mit
+    diesen Tieren zu tun h\xE4tte. Ich hatte au\xDFerdem einen schrecklichen Unfall
+    auf der Rolltreppe, mich hat eine \xE4ltere Frau b\xF6se mit ihrer Handtasche
+    geschlagen, sehen Sie hier, die Flecken. Ich habe nat\xFCrlich nicht zur\xFCck
+    geschrien, das w\xFCrde ich nie tun.  "
+  reactions_category_O:
+  - "Ich habe keine Traditionen mehr, und das macht mich wirklich traurig. Ich bin
+    einfach untr\xF6stlich, aber nicht nur deswegen, sondern auch, weil mich keiner
+    hier mag.  "
+  - 'Nein. Ich habe damit sehr schlechte Erfahrungen gemacht. Immer wenn ich so etwas
+    versuche werde ich rausgeworfen, und beschimpft, und geschlagen, es ist einfach
+    schrecklich.  '
+  - "Enthusiasmus? Dieses Wort hatte ich schon fast vergessen. Ist es das, was die
+    Verk\xE4ufer in den Kaufh\xE4usern mir immer vorspielen? Denn die laufen dann
+    auch immer weg.  "
+  - 'Nein, ich hab keine Angst. Ich bin einfach nur deprimiert. Alle meine Freunde
+    sind tot.   '
+  reactions_category_C:
+  - "Oh, ja, ein Plan\u2026. ich wei\xDF nicht. Vielleicht \u2026 geht das. Ich finde
+    Pl\xE4ne deprimierend.  "
+  - "Schreiben\u2026 schreiben ist schrecklich, die Leute machen sich immer lustig
+    \xFCber meine Schrift. Aber wenn ich es keinem zeige, vielleicht\u2026  "
+  - "Ach, das mag sein, aber ich bezweifele, dass mich so etwas wirklich gl\xFCcklicher
+    macht.  "
+  - 'Ja, mach ich. Zielsetzung. Ich merke es mir. (Seufz)  '
+  reactions_category_E:
+  - "(F\xE4ngt an zu weinen) Meine Freunde sind alle ausgestorben! Damals, der Meteorit  "
+  - "Sehen Sie mich wirklich in einem Verein? Ich wei\xDF nicht. Mit Menschenkontakt
+    habe ich schlechte Erfahrungen gemacht.  "
+  - "\xC4hm. Gut, ich wei\xDF aber nicht mit wem\u2026 alle hassen mich.  "
+  - 'Ja, das kann ich mal versuchen, vielleicht wenn ich kein Foto angebe.  '
+  reactions_category_A:
+  - "Nn nn naja, meinen Sie ich h\xE4tte die Zeugen Jehovas doch herein lassen sollen?
+    Ich.. ich wei\xDF nicht. Ich habe solch schlimme Erfahrungen gemacht.  "
+  - "\xC4hm, ich wei\xDF nicht, ich glaube das mit anderen Menschen ist keine gute
+    Idee\u2026  "
+  - "Nun gut, ich versuche es, ich werde daf\xFCr wohl einfach den Kontakt mit anderen
+    Menschen erst mal meiden. Um andere w\xFCrde ich mich ja gerne k\xFCmmern, aber
+    ich werde ja immer so niedergemacht\u2026  "
+  - "Genau das mache ich doch, aber sie geben ihn nie zur\xFCck. So h\xF6flich ich
+    auch bin, alle Menschen sind einfach gemein, und beleidigend. Keinen Respekt
+    f\xFCr Dinosaurier gibt es hier.  "
+  reactions_category_N:
+  - 'Hach, ich habe in der letzten Zeit alles und jeden abgewiesen. Selbst die Zeugen
+    Jehovas, und den Staubsaugervertreter, da ich solche Angst hatte, dass jemand
+    mich wieder beschimpft. Es ist schrecklich, die Menschen sind grausam.  '
+  - "Vielleicht haben Sie Recht und ich sollte mal wieder in den Wald gehen, und
+    ein bisschen gr\xFCn fressen. Vielleicht gehen auch Hecken\u2026  "
+  - "Wenn ich dar\xFCber nachdenke, habe ich so etwas schon seit Ewigkeiten nicht
+    mehr getan. M\xF6glicherweise gehe ich wirklich in den Wald.  "
+  - "Meinen Sie? Seit Jahren habe ich keine gute Beziehung zu jemandem mehr aufbauen
+    k\xF6nnen. Seit der Meteorit eingeschlagen ist, war ich eigentlich die Meiste
+    Zeit \xFCber alleine im Eis\u2026  "
